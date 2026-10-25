@@ -187,6 +187,128 @@
       repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px 7px),
       repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px 7px);
   }
+  /* Accordion panel: animates height with the grid-rows trick; closed content is not focusable. */
+  .acc-panel {
+    display: grid;
+    grid-template-rows: 0fr;
+    visibility: hidden;
+    transition:
+      grid-template-rows 0.25s ease,
+      visibility 0.25s;
+  }
+  .acc-panel[data-open='true'] {
+    grid-template-rows: 1fr;
+    visibility: visible;
+  }
+
+  @keyframes ina-fade {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+  }
+  .fade-in {
+    animation: ina-fade 0.25s ease-out;
+  }
+
+  /* Filter chips (Results) and other toggle buttons. */
+  .chip {
+    min-height: 2.5rem;
+    padding: 0.4rem 1rem;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    font-size: 0.72rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--line);
+    cursor: pointer;
+    transition:
+      color 0.2s ease,
+      border-color 0.2s ease,
+      background-color 0.2s ease;
+  }
+  .chip:hover {
+    color: var(--text);
+    border-color: var(--accent);
+  }
+  .chip[aria-pressed='true'] {
+    color: var(--accent-ink);
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+
+  /* Form controls: sharp, high contrast. */
+  .field {
+    width: 100%;
+    min-height: 2.75rem;
+    padding: 0.65rem 0.85rem;
+    color: var(--text);
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid var(--line);
+    border-radius: 0;
+    font: inherit;
+    font-size: 1rem;
+  }
+  .field:hover {
+    border-color: var(--muted);
+  }
+  .field:focus-visible {
+    border-color: var(--accent);
+    outline-offset: 1px;
+  }
+  .field[aria-invalid='true'] {
+    border-color: #ff7a6e;
+  }
+  .field-error {
+    margin-top: 0.35rem;
+    font-size: 0.85rem;
+    color: #ff9d94;
+  }
+  select.field option {
+    color: #111;
+  }
+
+  /* Before/after range: the native input covers the frame and is transparent, so it keeps
+     keyboard, touch and screen-reader behaviour; the visible handle is drawn separately. */
+  .ba-range {
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: transparent;
+    cursor: ew-resize;
+    touch-action: pan-y;
+  }
+  .ba-range::-webkit-slider-runnable-track {
+    height: 100%;
+    background: transparent;
+  }
+  .ba-range::-moz-range-track {
+    height: 100%;
+    background: transparent;
+  }
+  .ba-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 3rem;
+    height: 100%;
+    background: transparent;
+    border: 0;
+  }
+  .ba-range::-moz-range-thumb {
+    width: 3rem;
+    height: 100%;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+  }
+  .ba-range:focus-visible {
+    outline: none;
+  }
 }
 
 @layer utilities {
@@ -199,4 +321,10 @@
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* MyoMedic headings are mixed-case Montserrat, even where a component adds `uppercase`. */
+[data-brand='myomedic'] .font-heading {
+  text-transform: none;
+  font-weight: 600;
 }

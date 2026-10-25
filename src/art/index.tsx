@@ -158,3 +158,20 @@ export function HeartRateLine(props: ArtProps) {
     </svg>
   )
 }
+
+/** Portrait fallback: a head-and-shoulders silhouette lit by a spotlight cone. */
+export function CoachSilhouette(props: ArtProps) {
+  return (
+    <svg viewBox="0 0 320 400" {...base} {...props}>
+      <path d="M110 0 H210 L300 400 H20 Z" fill="var(--text)" opacity="0.07" />
+      <ellipse cx="160" cy="392" rx="120" ry="10" fill="var(--accent)" opacity="0.45" />
+      <circle cx="160" cy="150" r="50" fill="var(--text)" opacity="0.2" />
+      <path
+        d="M52 392 Q54 262 124 232 Q160 250 196 232 Q266 262 268 392 Z"
+        fill="var(--text)"
+        opacity="0.2"
+      />
+      <path d="M124 232 Q160 250 196 232 L184 205 H136 Z" fill="var(--accent)" opacity="0.6" />
+    </svg>
+  )
+}

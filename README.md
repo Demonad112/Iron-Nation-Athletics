@@ -30,12 +30,20 @@ The site uses `HashRouter` and `base: '/Iron-Nation-Athletics/'`. Reference asse
 | What | Where |
 |---|---|
 | Nav, contact details, socials, booking links | `src/content/site.ts` |
-| Home copy, stats, results, credentials | `src/content/home.ts` |
+| Home copy, stats, credentials | `src/content/home.ts` |
+| Page copy | `src/content/{training,online,myomedic,pricing,about,results,contact}.ts` |
+| Sample results and testimonials (shared with Home) | `src/content/results.ts` |
+| Formspree endpoint, map embed on/off | `src/content/contact.ts` |
 | Photos (URL or `null` for art fallback) and credits | `src/content/images.ts` |
 | Colours and fonts | `src/styles/tokens.css` |
 | Logos | `public/brand/` |
 
 List every placeholder: `grep -rn "TODO(client)" src`.
+
+## Open Graph image
+
+`public/og-image.png` is generated from `scripts/og-image.html`:
+`node scripts/generate-og.mjs` (needs Playwright). Commit the PNG after changes.
 
 ## Notes
 

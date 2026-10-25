@@ -66,7 +66,7 @@ export function MuscleMap({
     <svg
       viewBox="0 0 200 380"
       className={className}
-      role={interactive || title ? 'img' : undefined}
+      role={interactive ? 'group' : title ? 'img' : undefined}
       aria-label={title}
       aria-hidden={interactive || title ? undefined : true}
       fill="none"

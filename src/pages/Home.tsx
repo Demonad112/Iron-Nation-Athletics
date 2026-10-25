@@ -10,31 +10,19 @@ import {
   stats,
 } from '../content/home'
 import { images } from '../content/images'
-import { Barbell, Dumbbell, HeartRateLine, Kettlebell, Plate, PlateStack, Spotlight } from '../art'
+import { Barbell, Dumbbell, HeartRateLine, Plate, Spotlight } from '../art'
+import { resultArt } from '../art/resultArt'
 import { MuscleMap } from '../art/MuscleMap'
 import { LogoBadge } from '../components/brand/Logos'
-import { Stat } from '../components/Counter'
-import { ButtonLink, CTABand, GlassCard, SampleBadge, SectionHeading } from '../components/ui'
+import { ButtonLink, CTABand, GlassCard, SampleBadge, SectionHeading, Stat } from '../components/ui'
 import { useDocumentMeta } from '../hooks/useDocumentMeta'
-import { usePrefersReducedMotion } from '../hooks/useMediaQuery'
+import { useReveal } from '../hooks/useReveal'
 
 const methodIcons = [ClipboardCheck, DumbbellIcon, Utensils, HeartPulse]
-const resultArt = { plates: PlateStack, kettlebell: Kettlebell, barbell: Plate } as const
 
 export default function Home() {
   useDocumentMeta()
-  const reduced = usePrefersReducedMotion()
-
-  // Staggered reveal; disabled under reduced motion.
-  const reveal = (i = 0) =>
-    reduced
-      ? {}
-      : {
-          initial: { opacity: 0, y: 16 },
-          whileInView: { opacity: 1, y: 0 },
-          viewport: { once: true, margin: '-60px' },
-          transition: { duration: 0.35, delay: Math.min(i * 0.06, 0.24), ease: 'easeOut' as const },
-        }
+  const reveal = useReveal()
 
   return (
     <>
