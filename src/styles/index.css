@@ -1,0 +1,202 @@
+@import './tokens.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background: #0a0a0b;
+    color-scheme: dark;
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0;
+    background: #0a0a0b;
+    color: #f4f4f5;
+    font-family: Inter, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-heading);
+    letter-spacing: var(--heading-tracking);
+    line-height: 1;
+  }
+  [data-brand='myomedic'] h1,
+  [data-brand='myomedic'] h2,
+  [data-brand='myomedic'] h3 {
+    font-weight: 600;
+    text-transform: none;
+  }
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+  ::selection {
+    background: var(--accent);
+    color: #fff;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Glass block: semi-transparent so the animated background shows through. */
+  .glass {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  .glass-hover {
+    transition:
+      border-color 0.2s ease,
+      transform 0.2s ease;
+  }
+  .glass-hover:hover {
+    border-color: var(--accent);
+    transform: translateY(-3px);
+  }
+
+  .eyebrow {
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  [data-brand='myomedic'] .eyebrow {
+    font-family: Montserrat, sans-serif;
+  }
+
+  .container-ina {
+    width: 100%;
+    max-width: 76rem;
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+  }
+  @media (min-width: 768px) {
+    .container-ina {
+      padding-inline: 2rem;
+    }
+  }
+
+  /* Thick red rule, echoing the MyoMedic logo underline. */
+  .rule {
+    display: block;
+    height: 5px;
+    width: 4.5rem;
+    background: var(--accent);
+  }
+
+  /* Angled section cuts. */
+  .cut-bottom {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2.5rem), 0 100%);
+  }
+  .cut-both {
+    clip-path: polygon(0 2.5rem, 100% 0, 100% calc(100% - 2.5rem), 0 100%);
+  }
+
+  /* Buttons: sharp corners, heavy type, red underline sweep on hover. */
+  .btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 2.75rem;
+    padding: 0.7rem 1.35rem;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition:
+      background-color 0.2s ease,
+      border-color 0.2s ease,
+      color 0.2s ease;
+    white-space: nowrap;
+  }
+  .btn-primary {
+    background: var(--accent);
+    color: var(--accent-ink);
+  }
+  .btn-primary:hover {
+    background: #ff5446;
+  }
+  .btn-ghost {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: var(--line);
+    color: var(--text);
+  }
+  .btn-ghost:hover {
+    border-color: var(--accent);
+  }
+
+  .sweep {
+    position: relative;
+  }
+  .sweep::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+    width: 100%;
+    background: var(--accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s ease;
+  }
+  .sweep:hover::after,
+  .sweep[aria-current='page']::after {
+    transform: scaleX(1);
+  }
+
+  .sample-badge {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #0a0a0b;
+    background: #f2c14e;
+  }
+
+  /* Diamond knurl texture (two crossing line sets). */
+  .knurl {
+    background-image:
+      repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px 7px),
+      repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px 7px);
+  }
+}
+
+@layer utilities {
+  .font-heading {
+    font-family: var(--font-heading);
+  }
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+}
