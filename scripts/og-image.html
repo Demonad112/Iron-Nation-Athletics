@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@700&family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * { box-sizing: border-box; margin: 0; }
+      body {
+        width: 1200px; height: 630px; overflow: hidden; position: relative;
+        background: #0a0a0b; color: #f4f4f5; font-family: Lato, sans-serif;
+      }
+      .knurl {
+        position: absolute; inset: 0;
+        background-image:
+          repeating-linear-gradient(45deg, rgba(255,255,255,0.05) 0 1px, transparent 1px 8px),
+          repeating-linear-gradient(-45deg, rgba(255,255,255,0.05) 0 1px, transparent 1px 8px);
+      }
+      .glow {
+        position: absolute; left: -120px; top: -160px; width: 900px; height: 900px;
+        background: radial-gradient(circle, rgba(226,59,46,0.45), transparent 62%);
+      }
+      .content { position: absolute; left: 80px; top: 90px; right: 80px; }
+      .eyebrow { font-weight: 700; letter-spacing: 0.35em; font-size: 24px; color: #e23b2e; text-transform: uppercase; }
+      h1 {
+        font-family: 'Bebas Neue', Impact, sans-serif; font-weight: 400; text-transform: uppercase;
+        font-size: 160px; line-height: 0.9; margin-top: 20px; letter-spacing: 0.01em;
+      }
+      h1 span { color: #e23b2e; }
+      .rule { width: 120px; height: 10px; background: #e23b2e; margin-top: 28px; }
+      .sub { margin-top: 28px; font-size: 32px; color: #a1a1aa; font-weight: 700; letter-spacing: 0.04em; }
+      .bar { position: absolute; left: 0; right: 0; bottom: 0; height: 18px; background: #e23b2e; }
+      .badge { position: absolute; right: 80px; bottom: 60px; text-align: right; font-weight: 700; letter-spacing: 0.3em; font-size: 22px; color: #a1a1aa; }
+      .badge b { display: block; font-family: Montserrat, sans-serif; letter-spacing: 0; font-size: 30px; color: #e8473b; margin-bottom: 6px; }
+    </style>
+  </head>
+  <body>
+    <div class="knurl"></div>
+    <div class="glow"></div>
+    <div class="content">
+      <p class="eyebrow">Calgary · Alberta</p>
+      <h1>Iron Nation<br /><span>Athletics</span></h1>
+      <div class="rule"></div>
+      <p class="sub">Personal training · Online coaching · Massage therapy</p>
+    </div>
+    <div class="badge"><b>MyoMedic</b>R.M.T. · C.S.C.S.</div>
+    <div class="bar"></div>
+  </body>
+</html>

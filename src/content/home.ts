@@ -1,3 +1,5 @@
+import { results } from './results'
+
 // Home page copy. TODO(client): every string below is placeholder marketing copy.
 
 export const hero = {
@@ -64,27 +66,8 @@ export const method = [
   }, // TODO(client)
 ] as const
 
-// All sample data. Each is rendered with a visible "Sample" badge.
-export const featuredResults = [
-  {
-    name: 'Marcus T.',
-    headline: '+7 kg lean mass',
-    detail: '16-week lean bulk · in-person',
-    art: 'plates',
-  }, // TODO(client) replace with real, consented results
-  {
-    name: 'Priya S.',
-    headline: '−12 kg, deadlift 1.8× bodyweight',
-    detail: '24-week recomposition · online',
-    art: 'kettlebell',
-  }, // TODO(client)
-  {
-    name: 'Dan K.',
-    headline: 'Stage-ready in 18 weeks',
-    detail: 'Contest prep · online + RMT',
-    art: 'barbell',
-  }, // TODO(client)
-] as const
+// Same sample data as the Results page, so both stay consistent. Rendered with "Sample" badges.
+export const featuredResults = results.filter((r) => r.featured)
 
 export const credentials = [
   { abbr: 'R.M.T.', name: 'Registered Massage Therapist' }, // TODO(client) confirm credential and registration
