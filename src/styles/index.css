@@ -362,6 +362,18 @@
     }
   }
 
+  /* Decorative step numerals drawn with generated content, so they're not read as low-contrast text. */
+  .step-num {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 3.75rem;
+    line-height: 1;
+    opacity: 0.15;
+  }
+  .step-num::before {
+    content: attr(data-n);
+  }
+
   /* Wrong-code shake: 360 ms, removed entirely under reduced motion (see the global rule). */
   .shake {
     animation: ina-shake 0.36s ease-in-out;

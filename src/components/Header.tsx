@@ -52,7 +52,7 @@ export function Header() {
   return (
     <header className="glass sticky top-0 z-40 border-x-0 border-t-0 !bg-[rgba(10,10,11,0.96)]">
       <div className="container-ina flex h-16 items-center gap-6 md:h-[4.5rem]">
-        <Link to="/" aria-label="Iron Nation Athletics, home" className="shrink-0">
+        <Link to="/" className="shrink-0">
           <IronWordmark className="h-11 w-auto md:h-12" />
         </Link>
 
