@@ -71,11 +71,11 @@ export function CTABand({
   cta: { label: string; to: string }
 }) {
   return (
-    <section className="cut-both bg-[var(--accent)] py-20 text-white md:py-24">
+    <section className="cut-both bg-[var(--accent-fill)] py-20 text-white md:py-24">
       <div className="container-ina flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
         <div className="max-w-xl">
           <h2 className="font-heading text-balance text-4xl uppercase md:text-6xl">{title}</h2>
-          <p className="mt-3 text-base text-white/85 md:text-lg">{body}</p>
+          <p className="mt-3 text-base text-white md:text-lg">{body}</p>
         </div>
         {cta.to.startsWith('#/') || cta.to.startsWith('/') ? (
           <Link

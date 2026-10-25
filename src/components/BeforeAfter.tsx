@@ -27,7 +27,7 @@ export function BeforeAfter({
         <div className="absolute inset-0 flex items-center justify-center">
           <MuscleMap view="front" highlight={[...grown]} className="h-[92%] w-auto" />
         </div>
-        <span className="absolute right-3 top-12 bg-[var(--accent)] px-2 py-1 font-label text-[0.65rem] font-bold uppercase tracking-[0.2em] text-[var(--accent-ink)]">
+        <span className="absolute right-3 top-12 bg-[var(--accent-fill)] px-2 py-1 font-label text-[0.65rem] font-bold uppercase tracking-[0.2em] text-[var(--accent-ink)]">
           {afterLabel}
         </span>
 
@@ -49,7 +49,7 @@ export function BeforeAfter({
           style={{ left: `${pos}%` }}
           aria-hidden
         >
-          <span className="absolute left-1/2 top-1/2 flex h-11 w-11 -translate-x-1/2 -translate-y-1/2 items-center justify-center bg-[var(--accent)] text-[var(--accent-ink)] group-focus-within:ring-2 group-focus-within:ring-white">
+          <span className="absolute left-1/2 top-1/2 flex h-11 w-11 -translate-x-1/2 -translate-y-1/2 items-center justify-center bg-[var(--accent-fill)] text-[var(--accent-ink)] group-focus-within:ring-2 group-focus-within:ring-white">
             <span className="font-label text-lg font-bold leading-none">↔</span>
           </span>
         </div>

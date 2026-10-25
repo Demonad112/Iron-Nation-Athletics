@@ -7,6 +7,8 @@ export interface ContactValues {
   interest: string
   goals: string
   times: string
+  /** 'yes' once the visitor agrees to be contacted (required). */
+  consent: string
 }
 
 export type ContactErrors = Partial<Record<keyof ContactValues, string>>
@@ -18,6 +20,7 @@ export const emptyContact: ContactValues = {
   interest: '',
   goals: '',
   times: '',
+  consent: '',
 }
 
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/
@@ -46,6 +49,8 @@ export function validateField(
       return v.length < 10
         ? 'Tell us a little about your goals (at least 10 characters).'
         : undefined
+    case 'consent':
+      return v === 'yes' ? undefined : 'Tick the box to agree to be contacted.'
     default:
       return undefined
   }
@@ -58,6 +63,7 @@ export const fieldOrder: (keyof ContactValues)[] = [
   'interest',
   'goals',
   'times',
+  'consent',
 ]
 
 export function validateAll(values: ContactValues): ContactErrors {

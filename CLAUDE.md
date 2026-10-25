@@ -1,4 +1,5 @@
 # Iron Nation Athletics — project rules
+
 - Spec: BUILD_PLAN.md is the source of truth. Log deviations in CHANGELOG.md.
 - Stack: Vite + React + TS + Tailwind, HashRouter, deployed to GitHub Pages under
   /Iron-Nation-Athletics/. Never hard-code root-relative asset paths; use BASE_URL.
@@ -11,9 +12,11 @@
 - Before every commit: npm run build must pass with zero errors.
 
 ## Commands
+
 - `npm run dev` / `npm run build` (tsc + vite) / `npm run lint` / `npm run preview`
 - Preview URL path: http://localhost:4173/Iron-Nation-Athletics/ (HashRouter routes after `#`)
 
 ## Layout
+
 - `src/content/` copy, `src/art/` SVG art + MuscleMap, `src/components/` shell + shared UI,
   `src/pages/` routes, `src/hooks/` stores and helpers, `src/styles/tokens.css` brand tokens.

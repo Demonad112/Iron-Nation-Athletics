@@ -34,6 +34,9 @@
     outline: 2px solid var(--accent);
     outline-offset: 3px;
   }
+  [tabindex='-1']:focus {
+    outline: none;
+  }
   ::selection {
     background: var(--accent);
     color: #fff;
@@ -134,11 +137,15 @@
     white-space: nowrap;
   }
   .btn-primary {
-    background: var(--accent);
+    background: var(--accent-fill);
     color: var(--accent-ink);
   }
   .btn-primary:hover {
-    background: #ff5446;
+    background: var(--accent-fill-hover);
+  }
+  .btn:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
   }
   .btn-ghost {
     background: rgba(255, 255, 255, 0.04);
@@ -235,7 +242,7 @@
   }
   .chip[aria-pressed='true'] {
     color: var(--accent-ink);
-    background: var(--accent);
+    background: var(--accent-fill);
     border-color: var(--accent);
   }
 
@@ -311,6 +318,119 @@
   }
 }
 
+@layer components {
+  /* Portal: barbell loading bar. Plates slide on in 400 ms, then the loop restarts. */
+  .bb-load {
+    display: flex;
+    align-items: center;
+    width: 14rem;
+    height: 3rem;
+  }
+  .bb-bar {
+    flex: 1;
+    height: 8px;
+    background: linear-gradient(var(--text), var(--accent-2));
+  }
+  .bb-plate {
+    width: 12px;
+    background: var(--accent);
+    animation: bb-plate 0.4s ease-out infinite alternate;
+  }
+  .bb-plate-1,
+  .bb-plate-4 {
+    height: 3rem;
+  }
+  .bb-plate-2,
+  .bb-plate-3 {
+    height: 2.2rem;
+    background: var(--text);
+    animation-delay: 0.1s;
+  }
+  @keyframes bb-plate {
+    from {
+      opacity: 0.25;
+      transform: scaleY(0.5);
+    }
+    to {
+      opacity: 1;
+      transform: scaleY(1);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .bb-plate {
+      animation: none;
+    }
+  }
+
+  /* Wrong-code shake: 360 ms, removed entirely under reduced motion (see the global rule). */
+  .shake {
+    animation: ina-shake 0.36s ease-in-out;
+  }
+  @keyframes ina-shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(-8px);
+    }
+    40% {
+      transform: translateX(7px);
+    }
+    60% {
+      transform: translateX(-5px);
+    }
+    80% {
+      transform: translateX(3px);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .shake {
+      animation: none;
+    }
+  }
+
+  /* Check-in sliders: sharp thumb, 44px touch height. */
+  .ina-range {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 2.75rem;
+    background: transparent;
+    cursor: pointer;
+  }
+  .ina-range::-webkit-slider-runnable-track {
+    height: 6px;
+    background: var(--line);
+  }
+  .ina-range::-moz-range-track {
+    height: 6px;
+    background: var(--line);
+  }
+  .ina-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 1.5rem;
+    height: 1.75rem;
+    margin-top: -0.6rem;
+    background: var(--accent-fill);
+    border: 2px solid var(--text);
+    border-radius: 0;
+  }
+  .ina-range::-moz-range-thumb {
+    width: 1.5rem;
+    height: 1.75rem;
+    background: var(--accent-fill);
+    border: 2px solid var(--text);
+    border-radius: 0;
+  }
+  .ina-range:hover::-webkit-slider-thumb {
+    background: var(--accent-fill-hover);
+  }
+  .ina-range:hover::-moz-range-thumb {
+    background: var(--accent-fill-hover);
+  }
+}
+
 @layer utilities {
   .font-heading {
     font-family: var(--font-heading);
@@ -327,4 +447,52 @@
 [data-brand='myomedic'] .font-heading {
   text-transform: none;
   font-weight: 600;
+}
+
+/* Print: clean black on white. Pricing and the portal check-in text print without the site chrome. */
+@media print {
+  html,
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+  canvas,
+  header,
+  footer,
+  .no-print,
+  nav,
+  [role='tablist'],
+  .btn,
+  .cut-both {
+    display: none !important;
+  }
+  main,
+  main * {
+    color: #000 !important;
+    background: transparent !important;
+    border-color: #999 !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    clip-path: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+  .container-ina {
+    max-width: none;
+    padding-inline: 0;
+  }
+  a[href^='http']::after {
+    content: ' (' attr(href) ')';
+    font-size: 0.8em;
+  }
+  tr,
+  .glass {
+    break-inside: avoid;
+  }
+  html[data-print='checkin']
+    main
+    :not(:has(.checkin-print)):not(.checkin-print):not(.checkin-print *) {
+    display: none !important;
+  }
 }

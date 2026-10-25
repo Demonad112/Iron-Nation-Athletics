@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Root only, on purpose: the site uses HashRouter, and search engines ignore everything after "#",
+  so per-page URLs can't be listed. When the site moves to BrowserRouter + a custom domain, list
+  every route here (/training, /online, /myomedic, /pricing, /about, /results, /contact, /portal, /privacy).
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://demonad112.github.io/Iron-Nation-Athletics/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
