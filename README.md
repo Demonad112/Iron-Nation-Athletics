@@ -1,22 +1,44 @@
-# Project template
+# Iron Nation Athletics: showcase site
 
-Starter for new projects that use Claude Code, on the desktop app and in cloud (web/mobile) sessions.
+Working showcase for Cody Innes (Calgary). Spec: [BUILD_PLAN.md](BUILD_PLAN.md). Progress and
+decisions: [CHANGELOG.md](CHANGELOG.md). All copy, prices, testimonials and contact details are
+**placeholders** marked `TODO(client)`.
 
-## Use it
+Live (after merge to `main`): https://demonad112.github.io/Iron-Nation-Athletics/
 
-1. Click **Use this template** on GitHub and create the new repo.
-2. Fill in `CLAUDE.md` (commands, layout, gotchas). Keep it short.
-3. Install the Claude GitHub app on the new repo so cloud sessions can push and open PRs.
+## Setup
 
-Cloud sessions start with an empty container. If your project needs dependencies installed, ask Claude to install them at the start of the session (or to add a setup hook if you want it automatic).
+```bash
+npm install
+npm run dev       # http://localhost:5173/Iron-Nation-Athletics/
+npm run build     # type-check + production build into dist/
+npm run preview   # serve dist/ at http://localhost:4173/Iron-Nation-Athletics/
+npm run lint
+```
 
-## What is here
+## Deploy
 
-| Path | Purpose |
+GitHub Actions (`.github/workflows/deploy.yml`) builds and publishes `dist/` on every push to
+`main`. One-time: repo **Settings → Pages → Source: GitHub Actions**.
+
+The site uses `HashRouter` and `base: '/Iron-Nation-Athletics/'`. Reference assets with
+`import.meta.env.BASE_URL`, never a bare `/path`. At real launch, set `base: '/'` in
+`vite.config.ts` and switch to `BrowserRouter` in `src/App.tsx`.
+
+## Editing content
+
+| What | Where |
 |---|---|
-| `CLAUDE.md` | Project notes Claude reads every session |
-| `.claude/settings.json` | Allow-list for read-only git/gh and common test/lint/build commands; force-push deny |
-| `.github/pull_request_template.md` | Default PR body |
-| `.gitignore` | Ignores local Claude settings and worktrees |
+| Nav, contact details, socials, booking links | `src/content/site.ts` |
+| Home copy, stats, results, credentials | `src/content/home.ts` |
+| Photos (URL or `null` for art fallback) and credits | `src/content/images.ts` |
+| Colours and fonts | `src/styles/tokens.css` |
+| Logos | `public/brand/` |
 
-Personal preferences belong in `~/.claude/` or `CLAUDE.local.md`, not in the repo.
+List every placeholder: `grep -rn "TODO(client)" src`.
+
+## Notes
+
+- The background has footer toggles (dim, animation); `prefers-reduced-motion` shows a static frame.
+- The Client Portal (batch 3) will use static JSON, which is **not private**. A real version needs
+  auth and a database (e.g. Supabase).

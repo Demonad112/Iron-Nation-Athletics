@@ -1,0 +1,27 @@
+/* Brand tokens. INA is the parent brand; MyoMedic overrides inside [data-brand="myomedic"]. */
+:root {
+  --bg: #0a0a0b;
+  --surface: rgba(20, 20, 22, 0.62);
+  --surface-solid: #141416;
+  --accent: #e23b2e;
+  --accent-2: #8a8f98;
+  --text: #f4f4f5;
+  --muted: #a1a1aa;
+  --line: rgba(244, 244, 245, 0.12);
+  --accent-ink: #ffffff; /* text on accent fills */
+  --font-heading: 'Bebas Neue', Anton, Impact, sans-serif;
+  --heading-tracking: 0.02em;
+}
+
+[data-brand='myomedic'] {
+  --bg: #0b1220;
+  --surface: rgba(18, 28, 48, 0.62);
+  --surface-solid: #121c30;
+  --accent: #e8473b;
+  --accent-2: #1f2f4a;
+  --text: #eef2f7;
+  --muted: #9aa7ba;
+  --line: rgba(238, 242, 247, 0.14);
+  --font-heading: 'Montserrat', Inter, sans-serif;
+  --heading-tracking: -0.01em;
+}
