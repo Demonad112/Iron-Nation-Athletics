@@ -106,7 +106,7 @@ export default function Online() {
                 {...reveal(i)}
                 className="relative border-t-4 border-[var(--accent)] bg-black/30 p-6"
               >
-                <span className="font-heading text-6xl text-[var(--text)] opacity-15">
+                <span aria-hidden className="font-heading text-6xl text-[var(--text)] opacity-15">
                   {s.step}
                 </span>
                 <h3 className="font-heading mt-1 text-3xl uppercase">{s.title}</h3>
