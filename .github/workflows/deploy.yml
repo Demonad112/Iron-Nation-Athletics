@@ -3,6 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -11,7 +12,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  group: pages-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -24,6 +25,8 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - run: npx prettier --check .
+      - run: npm run validate
       - run: npm run lint
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
@@ -31,6 +34,8 @@ jobs:
           path: dist
 
   deploy:
+    # Pull requests only run the build job (format, data validation, lint, build).
+    if: github.event_name != 'pull_request'
     needs: build
     runs-on: ubuntu-latest
     environment:

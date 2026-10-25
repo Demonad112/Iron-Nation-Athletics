@@ -12,7 +12,9 @@ const here = path.dirname(fileURLToPath(import.meta.url))
 
 const browser = await chromium.launch()
 const page = await browser.newPage({ viewport: { width: 1200, height: 630 } })
-await page.goto(`file://${path.join(here, 'og-image.html')}`, { waitUntil: 'networkidle' }).catch(() => {})
+await page
+  .goto(`file://${path.join(here, 'og-image.html')}`, { waitUntil: 'networkidle' })
+  .catch(() => {})
 await page.evaluate(() => document.fonts.ready)
 await page.screenshot({ path: path.join(here, '..', 'public', 'og-image.png') })
 await browser.close()

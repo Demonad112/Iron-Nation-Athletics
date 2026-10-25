@@ -28,9 +28,6 @@
       "Bash(cargo clippy:*)",
       "Bash(pytest:*)"
     ],
-    "deny": [
-      "Bash(git push --force:*)",
-      "Bash(git push -f:*)"
-    ]
+    "deny": ["Bash(git push --force:*)", "Bash(git push -f:*)"]
   }
 }

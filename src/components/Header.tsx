@@ -50,7 +50,7 @@ export function Header() {
   }, [open, setOpen])
 
   return (
-    <header className="glass sticky top-0 z-40 border-x-0 border-t-0">
+    <header className="glass sticky top-0 z-40 border-x-0 border-t-0 !bg-[rgba(10,10,11,0.96)]">
       <div className="container-ina flex h-16 items-center gap-6 md:h-[4.5rem]">
         <Link to="/" aria-label="Iron Nation Athletics, home" className="shrink-0">
           <IronWordmark className="h-11 w-auto md:h-12" />
@@ -61,7 +61,7 @@ export function Header() {
             <NavLink
               key={n.to}
               to={n.to}
-              className="sweep font-label text-[0.75rem] font-bold uppercase tracking-[0.14em] text-[var(--muted)] transition-colors hover:text-[var(--text)] aria-[current=page]:text-[var(--text)]"
+              className="sweep inline-flex min-h-[2.75rem] items-center font-label text-[0.75rem] font-bold uppercase tracking-[0.14em] text-[var(--muted)] transition-colors hover:text-[var(--text)] aria-[current=page]:text-[var(--text)]"
             >
               {n.label}
             </NavLink>
@@ -72,21 +72,24 @@ export function Header() {
           <Link to="/contact" className="btn btn-primary !px-4">
             Book a Session
           </Link>
-          <Link to="/portal" className="btn btn-ghost !px-4">
+          <NavLink
+            to="/portal"
+            className="btn btn-ghost !px-4 aria-[current=page]:!border-[var(--accent)] aria-[current=page]:bg-white/10"
+          >
             <Lock size={14} aria-hidden />
             Client Portal
-          </Link>
+          </NavLink>
         </div>
 
         <div className="ml-auto flex items-center gap-2 xl:hidden">
-          <Link to="/contact" className="btn btn-primary !min-h-10 !px-3 !text-[0.7rem] sm:!px-4">
+          <Link to="/contact" className="btn btn-primary !min-h-11 !px-3 !text-[0.7rem] sm:!px-4">
             Book
             <span className="hidden sm:inline">&nbsp;a Session</span>
           </Link>
           <button
             ref={toggleRef}
             type="button"
-            className="btn btn-ghost !min-h-10 !px-3"
+            className="btn btn-ghost !min-h-11 !px-3 min-w-11"
             aria-label={open ? 'Close menu' : 'Open menu'}
             aria-expanded={open}
             aria-controls="mobile-drawer"

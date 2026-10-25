@@ -1,0 +1,1665 @@
+{
+  "code": "INA-DEMO",
+  "displayName": "Marcus T.",
+  "persona": "Hypertrophy · 12-week lean bulk · in-person",
+  "overview": {
+    "monthFocus": "Upper-chest and back width with a controlled 300 kcal surplus",
+    "phase": "Lean bulk",
+    "week": 9,
+    "totalWeeks": 12,
+    "coachNote": "Great month, Marcus. Bench and pull-ups both moved and the waist is only up 1.4 cm for 2.8 kg on the scale, so the surplus is doing its job. Keep the top sets honest at 2 reps in reserve, and protect your sleep. Deload lands in week 12.",
+    "nextCheckIn": "2026-11-01",
+    "nextRmt": null,
+    "adherence": 91,
+    "mode": "in-person",
+    "goal": "Add 3-4 kg of lean mass without the waist passing 84 cm"
+  },
+  "training": [
+    {
+      "week": 1,
+      "label": "Week 9 · Accumulate",
+      "days": [
+        {
+          "id": "push",
+          "name": "Push A",
+          "focus": "Chest, shoulders, triceps",
+          "muscles": ["chest", "shoulders", "triceps"],
+          "exercises": [
+            {
+              "name": "Barbell bench press",
+              "sets": 4,
+              "reps": "6-8",
+              "rir": 2,
+              "restSec": 150,
+              "tempo": "2-1-1-0",
+              "notes": "Pause 1s on the chest. Top set then 2 back-off sets at -7%.",
+              "swap": "Dumbbell bench press if the shoulder is cranky"
+            },
+            {
+              "name": "Seated dumbbell shoulder press",
+              "sets": 3,
+              "reps": "8-10",
+              "rir": 2,
+              "restSec": 120,
+              "tempo": "2-0-1-0",
+              "notes": "Full range, ribs down.",
+              "swap": "Machine shoulder press"
+            },
+            {
+              "name": "Incline cable fly",
+              "sets": 3,
+              "reps": "10-12",
+              "rir": 1,
+              "restSec": 90,
+              "tempo": "2-1-1-0",
+              "notes": "Stretch under control, squeeze at the top."
+            },
+            {
+              "name": "Cable lateral raise",
+              "sets": 4,
+              "reps": "12-15",
+              "rir": 0,
+              "restSec": 60,
+              "tempo": "2-0-1-1",
+              "notes": "Last set: drop set to failure.",
+              "swap": "Dumbbell lateral raise"
+            },
+            {
+              "name": "Rope triceps pushdown",
+              "sets": 3,
+              "reps": "10-12",
+              "rir": 1,
+              "restSec": 75,
+              "tempo": "2-0-1-1"
+            },
+            {
+              "name": "Overhead cable triceps extension",
+              "sets": 3,
+              "reps": "10-12",
+              "rir": 0,
+              "restSec": 75,
+              "tempo": "3-0-1-0",
+              "notes": "Long-head stretch is the point."
+            }
+          ]
+        },
+        {
+          "id": "pull",
+          "name": "Pull A",
+          "focus": "Back, rear delts, biceps",
+          "muscles": ["lats", "traps", "biceps"],
+          "exercises": [
+            {
+              "name": "Weighted pull-up",
+              "sets": 4,
+              "reps": "6-8",
+              "rir": 2,
+              "restSec": 150,
+              "tempo": "2-0-1-1",
+              "notes": "Add load once you hit 8 on every set.",
+              "swap": "Neutral-grip lat pulldown"
+            },
+            {
+              "name": "Chest-supported row",
+              "sets": 4,
+              "reps": "8-10",
+              "rir": 2,
+              "restSec": 120,
+              "tempo": "2-1-1-0",
+              "notes": "Chest on the pad, no momentum.",
+              "swap": "Seal row"
+            },
+            {
+              "name": "Single-arm cable pulldown",
+              "sets": 3,
+              "reps": "10-12",
+              "rir": 1,
+              "restSec": 90,
+              "tempo": "2-1-1-0"
+            },
+            {
+              "name": "Face pull",
+              "sets": 3,
+              "reps": "15-20",
+              "rir": 1,
+              "restSec": 60,
+              "tempo": "1-1-1-1",
+              "notes": "Thumbs back, pull to eyebrows."
+            },
+            {
+              "name": "Incline dumbbell curl",
+              "sets": 3,
+              "reps": "10-12",
+              "rir": 1,
+              "restSec": 75,
+              "tempo": "3-0-1-0"
+            },
+            {
+              "name": "Hammer curl",
+              "sets": 3,
+              "reps": "10-12",
+              "rir": 0,
+              "restSec": 75,
+              "tempo": "2-0-1-0"
+            }
+          ]
+        },
+        {
+          "id": "legs",
+          "name": "Legs A",
+          "focus": "Quads, hamstrings, calves",
+          "muscles": ["quads", "hamstrings", "calves", "glutes"],
+          "exercises": [
+            {
+              "name": "Back squat",
+              "sets": 4,
+              "reps": "6-8",
+              "rir": 2,
+              "restSec": 180,
+              "tempo": "3-1-1-0",
+              "notes": "Belt on for top set only. Depth to parallel or below.",
+              "swap": "Hack squat"
+            },
+            {
+              "name": "Romanian deadlift",
+              "sets": 3,
+              "reps": "8-10",
+              "rir": 2,
+              "restSec": 150,
+              "tempo": "3-1-1-0",
+              "notes": "Hinge, bar close to the legs.",
+              "swap": "Dumbbell RDL"
+            },
+            {
+              "name": "Leg press",
+              "sets": 3,
+              "reps": "10-15",
+              "rir": 1,
+              "restSec": 120,
+              "tempo": "2-1-1-0",
+              "notes": "Feet low and narrow to bias the quads."
+            },
+            {
+              "name": "Seated leg curl",
+              "sets": 3,
+              "reps": "10-12",
+              "rir": 1,
+              "restSec": 90,
+              "tempo": "2-1-1-1"
+            },
+            {
+              "name": "Standing calf raise",
+              "sets": 4,
+              "reps": "10-15",
+              "rir": 0,
+              "restSec": 60,
+              "tempo": "2-2-1-1",
+              "notes": "Pause 2s in the stretch.",
+              "swap": "Seated calf raise"
+            }
+          ]
+        },
+        {
+          "id": "upper",
+          "name": "Upper B",
+          "focus": "Chest, back, arms",
+          "muscles": ["chest", "lats", "shoulders", "biceps", "triceps"],
+          "exercises": [
+            {
+              "name": "Incline dumbbell press",
+              "sets": 4,
+              "reps": "8-10",
+              "rir": 2,
+              "restSec": 120,
+              "tempo": "2-1-1-0"
+            },
+            {
+              "name": "Barbell row",
+              "sets": 4,
+              "reps": "8-10",
+              "rir": 2,
+              "restSec": 120,
+              "tempo": "2-0-1-1",
+              "notes": "Torso at 30° above parallel.",
+              "swap": "T-bar row"
+            },
+            {
+              "name": "Dip (weighted)",
+              "sets": 3,
+              "reps": "8-12",
+              "rir": 1,
+              "restSec": 120,
+              "tempo": "2-0-1-0",
+              "notes": "Lean forward for chest, upright for triceps.",
+              "swap": "Close-grip push-up"
+            },
+            {
+              "name": "Lat prayer pulldown",
+              "sets": 3,
+              "reps": "12-15",
+              "rir": 0,
+              "restSec": 75,
+              "tempo": "2-1-1-0"
+            },
+            {
+              "name": "EZ-bar curl",
+              "sets": 3,
+              "reps": "8-10",
+              "rir": 1,
+              "restSec": 75,
+              "tempo": "2-0-1-0"
+            },
+            {
+              "name": "Skullcrusher",
+              "sets": 3,
+              "reps": "8-10",
+              "rir": 1,
+              "restSec": 75,
+              "tempo": "3-0-1-0"
+            }
+          ]
+        },
+        {
+          "id": "legs2",
+          "name": "Legs B",
+          "focus": "Glutes, hamstrings, core",
+          "muscles": ["glutes", "hamstrings", "quads", "core"],
+          "exercises": [
+            {
+              "name": "Conventional deadlift",
+              "sets": 3,
+              "reps": "4-6",
+              "rir": 2,
+              "restSec": 210,
+              "tempo": "1-0-1-0",
+              "notes": "Reset every rep. Straps allowed on the last set.",
+              "swap": "Trap-bar deadlift"
+            },
+            {
+              "name": "Bulgarian split squat",
+              "sets": 3,
+              "reps": "8-10",
+              "rir": 1,
+              "restSec": 120,
+              "tempo": "3-0-1-0",
+              "notes": "Torso slightly forward to bias glutes.",
+              "swap": "Walking lunge"
+            },
+            {
+              "name": "Leg extension",
+              "sets": 3,
+              "reps": "12-15",
+              "rir": 0,
+              "restSec": 75,
+              "tempo": "2-1-1-1"
+            },
+            {
+              "name": "Lying leg curl",
+              "sets": 3,
+              "reps": "10-12",
+              "rir": 1,
+              "restSec": 75,
+              "tempo": "2-1-1-0"
+            },
+            {
+              "name": "Cable crunch",
+              "sets": 3,
+              "reps": "12-15",
+              "rir": 1,
+              "restSec": 60,
+              "tempo": "2-1-1-1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "label": "Week 10 · Accumulate",
+      "days": [
+        {
+          "id": "push",
+          "name": "Push A",
+          "focus": "Chest, shoulders, triceps",
+          "muscles": ["chest", "shoulders", "triceps"],
+          "exercises": [
+            {
+              "name": "Barbell bench press",
+              "sets": 4,
+              "reps": "6-8",
+              "rir": 2,
+              "restSec": 150,
+              "tempo": "2-1-1-0",
+              "notes": "Pause 1s on the chest. Top set then 2 back-off sets at -7%.",
+              "swap": "Dumbbell bench press if the shoulder is cranky"
+            },
+            {
+              "name": "Seated dumbbell shoulder press",
+              "sets": 3,
+              "reps": "8-10",
+              "rir": 2,
+              "restSec": 120,
+              "tempo": "2-0-1-0",
+              "notes": "Full range, ribs down.",
+              "swap": "Machine shoulder press"
+            },
+            {
+              "name": "Incline cable fly",
+              "sets": 3,
+              "reps": "10-12",
+              "rir": 1,
+              "restSec": 90,
+              "tempo": "2-1-1-0",
+              "notes": "Stretch under control, squeeze at the top."
+            },
+            {
+              "name": "Cable lateral raise",
+              "sets": 4,
+              "reps": "12-15",
+              "rir": 0,
+              "restSec": 60,
+              "tempo": "2-0-1-1",
+              "notes": "Last set: drop set to failure.",
+              "swap": "Dumbbell lateral raise"
+            },
+            {
+              "name": "Rope triceps pushdown",
+              "sets": 3,
+              "reps": "10-12",
+              "rir": 1,
+              "restSec": 75,
+              "tempo": "2-0-1-1"
+            },
+            {
+              "name": "Overhead cable triceps extension",
+              "sets": 3,
+              "reps": "10-12",
+              "rir": 0,
+              "restSec": 75,
+              "tempo": "3-0-1-0",
+              "notes": "Long-head stretch is the point."
+            }
+          ]
+        },
+        {
+          "id": "pull",
+          "name": "Pull A",
+          "focus": "Back, rear delts, biceps",
+          "muscles": ["lats", "traps", "biceps"],
+          "exercises": [
+            {
+              "name": "Weighted pull-up",
+              "sets": 4,
+              "reps": "6-8",
+              "rir": 2,
+              "restSec": 150,
+              "tempo": "2-0-1-1",
+              "notes": "Add load once you hit 8 on every set.",
+              "swap": "Neutral-grip lat pulldown"
+            },
+            {
+              "name": "Chest-supported row",
+              "sets": 4,
+              "reps": "8-10",
+              "rir": 2,
+              "restSec": 120,
+              "tempo": "2-1-1-0",
+              "notes": "Chest on the pad, no momentum.",
+              "swap": "Seal row"
+            },
+            {
+              "name": "Single-arm cable pulldown",
+              "sets": 3,
+              "reps": "10-12",
+              "rir": 1,
+              "restSec": 90,
+              "tempo": "2-1-1-0"
+            },
+            {
+              "name": "Face pull",
+              "sets": 3,
+              "reps": "15-20",
+              "rir": 1,
+              "restSec": 60,
+              "tempo": "1-1-1-1",
+              "notes": "Thumbs back, pull to eyebrows."
+            },
+            {
+              "name": "Incline dumbbell curl",
+              "sets": 3,
+              "reps": "10-12",
+              "rir": 1,
+              "restSec": 75,
+              "tempo": "3-0-1-0"
+            },
+            {
+              "name": "Hammer curl",
+              "sets": 3,
+              "reps": "10-12",
+              "rir": 0,
+              "restSec": 75,
+              "tempo": "2-0-1-0"
+            }
+          ]
+        },
+        {
+          "id": "legs",
+          "name": "Legs A",
+          "focus": "Quads, hamstrings, calves",
+          "muscles": ["quads", "hamstrings", "calves", "glutes"],
+          "exercises": [
+            {
+              "name": "Back squat",
+              "sets": 4,
+              "reps": "6-8",
+              "rir": 2,
+              "restSec": 180,
+              "tempo": "3-1-1-0",
+              "notes": "Belt on for top set only. Depth to parallel or below.",
+              "swap": "Hack squat"
+            },
+            {
+              "name": "Romanian deadlift",
+              "sets": 3,
+              "reps": "8-10",
+              "rir": 2,
+              "restSec": 150,
+              "tempo": "3-1-1-0",
+              "notes": "Hinge, bar close to the legs.",
+              "swap": "Dumbbell RDL"
+            },
+            {
+              "name": "Leg press",
+              "sets": 3,
+              "reps": "10-15",
+              "rir": 1,
+              "restSec": 120,
+              "tempo": "2-1-1-0",
+              "notes": "Feet low and narrow to bias the quads."
+            },
+            {
+              "name": "Seated leg curl",
+              "sets": 3,
+              "reps": "10-12",
+              "rir": 1,
+              "restSec": 90,
+              "tempo": "2-1-1-1"
+            },
+            {
+              "name": "Standing calf raise",
+              "sets": 4,
+              "reps": "10-15",
+              "rir": 0,
+              "restSec": 60,
+              "tempo": "2-2-1-1",
+              "notes": "Pause 2s in the stretch.",
+              "swap": "Seated calf raise"
+            }
+          ]
+        },
+        {
+          "id": "upper",
+          "name": "Upper B",
+          "focus": "Chest, back, arms",
+          "muscles": ["chest", "lats", "shoulders", "biceps", "triceps"],
+          "exercises": [
+            {
+              "name": "Incline dumbbell press",
+              "sets": 4,
+              "reps": "8-10",
+              "rir": 2,
+              "restSec": 120,
+              "tempo": "2-1-1-0"
+            },
+            {
+              "name": "Barbell row",
+              "sets": 4,
+              "reps": "8-10",
+              "rir": 2,
+              "restSec": 120,
+              "tempo": "2-0-1-1",
+              "notes": "Torso at 30° above parallel.",
+              "swap": "T-bar row"
+            },
+            {
+              "name": "Dip (weighted)",
+              "sets": 3,
+              "reps": "8-12",
+              "rir": 1,
+              "restSec": 120,
+              "tempo": "2-0-1-0",
+              "notes": "Lean forward for chest, upright for triceps.",
+              "swap": "Close-grip push-up"
+            },
+            {
+              "name": "Lat prayer pulldown",
+              "sets": 3,
+              "reps": "12-15",
+              "rir": 0,
+              "restSec": 75,
+              "tempo": "2-1-1-0"
+            },
+            {
+              "name": "EZ-bar curl",
+              "sets": 3,
+              "reps": "8-10",
+              "rir": 1,
+              "restSec": 75,
+              "tempo": "2-0-1-0"
+            },
+            {
+              "name": "Skullcrusher",
+              "sets": 3,
+              "reps": "8-10",
+              "rir": 1,
+              "restSec": 75,
+              "tempo": "3-0-1-0"
+            }
+          ]
+        },
+        {
+          "id": "legs2",
+          "name": "Legs B",
+          "focus": "Glutes, hamstrings, core",
+          "muscles": ["glutes", "hamstrings", "quads", "core"],
+          "exercises": [
+            {
+              "name": "Conventional deadlift",
+              "sets": 3,
+              "reps": "4-6",
+              "rir": 2,
+              "restSec": 210,
+              "tempo": "1-0-1-0",
+              "notes": "Reset every rep. Straps allowed on the last set.",
+              "swap": "Trap-bar deadlift"
+            },
+            {
+              "name": "Bulgarian split squat",
+              "sets": 3,
+              "reps": "8-10",
+              "rir": 1,
+              "restSec": 120,
+              "tempo": "3-0-1-0",
+              "notes": "Torso slightly forward to bias glutes.",
+              "swap": "Walking lunge"
+            },
+            {
+              "name": "Leg extension",
+              "sets": 3,
+              "reps": "12-15",
+              "rir": 0,
+              "restSec": 75,
+              "tempo": "2-1-1-1"
+            },
+            {
+              "name": "Lying leg curl",
+              "sets": 3,
+              "reps": "10-12",
+              "rir": 1,
+              "restSec": 75,
+              "tempo": "2-1-1-0"
+            },
+            {
+              "name": "Cable crunch",
+              "sets": 3,
+              "reps": "12-15",
+              "rir": 1,
+              "restSec": 60,
+              "tempo": "2-1-1-1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "label": "Week 11 · Intensify",
+      "days": [
+        {
+          "id": "push",
+          "name": "Push A",
+          "focus": "Chest, shoulders, triceps",
+          "muscles": ["chest", "shoulders", "triceps"],
+          "exercises": [
+            {
+              "name": "Barbell bench press",
+              "sets": 4,
+              "reps": "6-8",
+              "rir": 1,
+              "restSec": 150,
+              "tempo": "2-1-1-0",
+              "notes": "Pause 1s on the chest. Top set then 2 back-off sets at -7%.",
+              "swap": "Dumbbell bench press if the shoulder is cranky"
+            },
+            {
+              "name": "Seated dumbbell shoulder press",
+              "sets": 3,
+              "reps": "8-10",
+              "rir": 1,
+              "restSec": 120,
+              "tempo": "2-0-1-0",
+              "notes": "Full range, ribs down.",
+              "swap": "Machine shoulder press"
+            },
+            {
+              "name": "Incline cable fly",
+              "sets": 3,
+              "reps": "10-12",
+              "rir": 0,
+              "restSec": 90,
+              "tempo": "2-1-1-0",
+              "notes": "Stretch under control, squeeze at the top."
+            },
+            {
+              "name": "Cable lateral raise",
+              "sets": 4,
+              "reps": "12-15",
+              "rir": 0,
+              "restSec": 60,
+              "tempo": "2-0-1-1",
+              "notes": "Last set: drop set to failure.",
+              "swap": "Dumbbell lateral raise"
+            },
+            {
+              "name": "Rope triceps pushdown",
+              "sets": 3,
+              "reps": "10-12",
+              "rir": 0,
+              "restSec": 75,
+              "tempo": "2-0-1-1"
+            },
+            {
+              "name": "Overhead cable triceps extension",
+              "sets": 3,
+              "reps": "10-12",
+              "rir": 0,
+              "restSec": 75,
+              "tempo": "3-0-1-0",
+              "notes": "Long-head stretch is the point."
+            }
+          ]
+        },
+        {
+          "id": "pull",
+          "name": "Pull A",
+          "focus": "Back, rear delts, biceps",
+          "muscles": ["lats", "traps", "biceps"],
+          "exercises": [
+            {
+              "name": "Weighted pull-up",
+              "sets": 4,
+              "reps": "6-8",
+              "rir": 1,
+              "restSec": 150,
+              "tempo": "2-0-1-1",
+              "notes": "Add load once you hit 8 on every set.",
+              "swap": "Neutral-grip lat pulldown"
+            },
+            {
+              "name": "Chest-supported row",
+              "sets": 4,
+              "reps": "8-10",
+              "rir": 1,
+              "restSec": 120,
+              "tempo": "2-1-1-0",
+              "notes": "Chest on the pad, no momentum.",
+              "swap": "Seal row"
+            },
+            {
+              "name": "Single-arm cable pulldown",
+              "sets": 3,
+              "reps": "10-12",
+              "rir": 0,
+              "restSec": 90,
+              "tempo": "2-1-1-0"
+            },
+            {
+              "name": "Face pull",
+              "sets": 3,
+              "reps": "15-20",
+              "rir": 0,
+              "restSec": 60,
+              "tempo": "1-1-1-1",
+              "notes": "Thumbs back, pull to eyebrows."
+            },
+            {
+              "name": "Incline dumbbell curl",
+              "sets": 3,
+              "reps": "10-12",
+              "rir": 0,
+              "restSec": 75,
+              "tempo": "3-0-1-0"
+            },
+            {
+              "name": "Hammer curl",
+              "sets": 3,
+              "reps": "10-12",
+              "rir": 0,
+              "restSec": 75,
+              "tempo": "2-0-1-0"
+            }
+          ]
+        },
+        {
+          "id": "legs",
+          "name": "Legs A",
+          "focus": "Quads, hamstrings, calves",
+          "muscles": ["quads", "hamstrings", "calves", "glutes"],
+          "exercises": [
+            {
+              "name": "Back squat",
+              "sets": 4,
+              "reps": "6-8",
+              "rir": 1,
+              "restSec": 180,
+              "tempo": "3-1-1-0",
+              "notes": "Belt on for top set only. Depth to parallel or below.",
+              "swap": "Hack squat"
+            },
+            {
+              "name": "Romanian deadlift",
+              "sets": 3,
+              "reps": "8-10",
+              "rir": 1,
+              "restSec": 150,
+              "tempo": "3-1-1-0",
+              "notes": "Hinge, bar close to the legs.",
+              "swap": "Dumbbell RDL"
+            },
+            {
+              "name": "Leg press",
+              "sets": 3,
+              "reps": "10-15",
+              "rir": 0,
+              "restSec": 120,
+              "tempo": "2-1-1-0",
+              "notes": "Feet low and narrow to bias the quads."
+            },
+            {
+              "name": "Seated leg curl",
+              "sets": 3,
+              "reps": "10-12",
+              "rir": 0,
+              "restSec": 90,
+              "tempo": "2-1-1-1"
+            },
+            {
+              "name": "Standing calf raise",
+              "sets": 4,
+              "reps": "10-15",
+              "rir": 0,
+              "restSec": 60,
+              "tempo": "2-2-1-1",
+              "notes": "Pause 2s in the stretch.",
+              "swap": "Seated calf raise"
+            }
+          ]
+        },
+        {
+          "id": "upper",
+          "name": "Upper B",
+          "focus": "Chest, back, arms",
+          "muscles": ["chest", "lats", "shoulders", "biceps", "triceps"],
+          "exercises": [
+            {
+              "name": "Incline dumbbell press",
+              "sets": 4,
+              "reps": "8-10",
+              "rir": 1,
+              "restSec": 120,
+              "tempo": "2-1-1-0"
+            },
+            {
+              "name": "Barbell row",
+              "sets": 4,
+              "reps": "8-10",
+              "rir": 1,
+              "restSec": 120,
+              "tempo": "2-0-1-1",
+              "notes": "Torso at 30° above parallel.",
+              "swap": "T-bar row"
+            },
+            {
+              "name": "Dip (weighted)",
+              "sets": 3,
+              "reps": "8-12",
+              "rir": 0,
+              "restSec": 120,
+              "tempo": "2-0-1-0",
+              "notes": "Lean forward for chest, upright for triceps.",
+              "swap": "Close-grip push-up"
+            },
+            {
+              "name": "Lat prayer pulldown",
+              "sets": 3,
+              "reps": "12-15",
+              "rir": 0,
+              "restSec": 75,
+              "tempo": "2-1-1-0"
+            },
+            {
+              "name": "EZ-bar curl",
+              "sets": 3,
+              "reps": "8-10",
+              "rir": 0,
+              "restSec": 75,
+              "tempo": "2-0-1-0"
+            },
+            {
+              "name": "Skullcrusher",
+              "sets": 3,
+              "reps": "8-10",
+              "rir": 0,
+              "restSec": 75,
+              "tempo": "3-0-1-0"
+            }
+          ]
+        },
+        {
+          "id": "legs2",
+          "name": "Legs B",
+          "focus": "Glutes, hamstrings, core",
+          "muscles": ["glutes", "hamstrings", "quads", "core"],
+          "exercises": [
+            {
+              "name": "Conventional deadlift",
+              "sets": 3,
+              "reps": "4-6",
+              "rir": 1,
+              "restSec": 210,
+              "tempo": "1-0-1-0",
+              "notes": "Reset every rep. Straps allowed on the last set.",
+              "swap": "Trap-bar deadlift"
+            },
+            {
+              "name": "Bulgarian split squat",
+              "sets": 3,
+              "reps": "8-10",
+              "rir": 0,
+              "restSec": 120,
+              "tempo": "3-0-1-0",
+              "notes": "Torso slightly forward to bias glutes.",
+              "swap": "Walking lunge"
+            },
+            {
+              "name": "Leg extension",
+              "sets": 3,
+              "reps": "12-15",
+              "rir": 0,
+              "restSec": 75,
+              "tempo": "2-1-1-1"
+            },
+            {
+              "name": "Lying leg curl",
+              "sets": 3,
+              "reps": "10-12",
+              "rir": 0,
+              "restSec": 75,
+              "tempo": "2-1-1-0"
+            },
+            {
+              "name": "Cable crunch",
+              "sets": 3,
+              "reps": "12-15",
+              "rir": 0,
+              "restSec": 60,
+              "tempo": "2-1-1-1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "label": "Week 12 · Deload",
+      "days": [
+        {
+          "id": "push",
+          "name": "Push A",
+          "focus": "Chest, shoulders, triceps",
+          "muscles": ["chest", "shoulders", "triceps"],
+          "exercises": [
+            {
+              "name": "Barbell bench press",
+              "sets": 2,
+              "reps": "6-8",
+              "rir": 4,
+              "restSec": 150,
+              "tempo": "2-1-1-0",
+              "notes": "Pause 1s on the chest. Top set then 2 back-off sets at -7%. Deload: half the sets, leave 4 reps in the tank.",
+              "swap": "Dumbbell bench press if the shoulder is cranky"
+            },
+            {
+              "name": "Seated dumbbell shoulder press",
+              "sets": 2,
+              "reps": "8-10",
+              "rir": 4,
+              "restSec": 120,
+              "tempo": "2-0-1-0",
+              "notes": "Full range, ribs down. Deload: half the sets, leave 4 reps in the tank.",
+              "swap": "Machine shoulder press"
+            },
+            {
+              "name": "Incline cable fly",
+              "sets": 2,
+              "reps": "10-12",
+              "rir": 4,
+              "restSec": 90,
+              "tempo": "2-1-1-0",
+              "notes": "Stretch under control, squeeze at the top. Deload: half the sets, leave 4 reps in the tank."
+            },
+            {
+              "name": "Cable lateral raise",
+              "sets": 2,
+              "reps": "12-15",
+              "rir": 4,
+              "restSec": 60,
+              "tempo": "2-0-1-1",
+              "notes": "Last set: drop set to failure. Deload: half the sets, leave 4 reps in the tank.",
+              "swap": "Dumbbell lateral raise"
+            },
+            {
+              "name": "Rope triceps pushdown",
+              "sets": 2,
+              "reps": "10-12",
+              "rir": 4,
+              "restSec": 75,
+              "tempo": "2-0-1-1",
+              "notes": "Deload: half the sets, leave 4 reps in the tank."
+            },
+            {
+              "name": "Overhead cable triceps extension",
+              "sets": 2,
+              "reps": "10-12",
+              "rir": 4,
+              "restSec": 75,
+              "tempo": "3-0-1-0",
+              "notes": "Long-head stretch is the point. Deload: half the sets, leave 4 reps in the tank."
+            }
+          ]
+        },
+        {
+          "id": "pull",
+          "name": "Pull A",
+          "focus": "Back, rear delts, biceps",
+          "muscles": ["lats", "traps", "biceps"],
+          "exercises": [
+            {
+              "name": "Weighted pull-up",
+              "sets": 2,
+              "reps": "6-8",
+              "rir": 4,
+              "restSec": 150,
+              "tempo": "2-0-1-1",
+              "notes": "Add load once you hit 8 on every set. Deload: half the sets, leave 4 reps in the tank.",
+              "swap": "Neutral-grip lat pulldown"
+            },
+            {
+              "name": "Chest-supported row",
+              "sets": 2,
+              "reps": "8-10",
+              "rir": 4,
+              "restSec": 120,
+              "tempo": "2-1-1-0",
+              "notes": "Chest on the pad, no momentum. Deload: half the sets, leave 4 reps in the tank.",
+              "swap": "Seal row"
+            },
+            {
+              "name": "Single-arm cable pulldown",
+              "sets": 2,
+              "reps": "10-12",
+              "rir": 4,
+              "restSec": 90,
+              "tempo": "2-1-1-0",
+              "notes": "Deload: half the sets, leave 4 reps in the tank."
+            },
+            {
+              "name": "Face pull",
+              "sets": 2,
+              "reps": "15-20",
+              "rir": 4,
+              "restSec": 60,
+              "tempo": "1-1-1-1",
+              "notes": "Thumbs back, pull to eyebrows. Deload: half the sets, leave 4 reps in the tank."
+            },
+            {
+              "name": "Incline dumbbell curl",
+              "sets": 2,
+              "reps": "10-12",
+              "rir": 4,
+              "restSec": 75,
+              "tempo": "3-0-1-0",
+              "notes": "Deload: half the sets, leave 4 reps in the tank."
+            },
+            {
+              "name": "Hammer curl",
+              "sets": 2,
+              "reps": "10-12",
+              "rir": 4,
+              "restSec": 75,
+              "tempo": "2-0-1-0",
+              "notes": "Deload: half the sets, leave 4 reps in the tank."
+            }
+          ]
+        },
+        {
+          "id": "legs",
+          "name": "Legs A",
+          "focus": "Quads, hamstrings, calves",
+          "muscles": ["quads", "hamstrings", "calves", "glutes"],
+          "exercises": [
+            {
+              "name": "Back squat",
+              "sets": 2,
+              "reps": "6-8",
+              "rir": 4,
+              "restSec": 180,
+              "tempo": "3-1-1-0",
+              "notes": "Belt on for top set only. Depth to parallel or below. Deload: half the sets, leave 4 reps in the tank.",
+              "swap": "Hack squat"
+            },
+            {
+              "name": "Romanian deadlift",
+              "sets": 2,
+              "reps": "8-10",
+              "rir": 4,
+              "restSec": 150,
+              "tempo": "3-1-1-0",
+              "notes": "Hinge, bar close to the legs. Deload: half the sets, leave 4 reps in the tank.",
+              "swap": "Dumbbell RDL"
+            },
+            {
+              "name": "Leg press",
+              "sets": 2,
+              "reps": "10-15",
+              "rir": 4,
+              "restSec": 120,
+              "tempo": "2-1-1-0",
+              "notes": "Feet low and narrow to bias the quads. Deload: half the sets, leave 4 reps in the tank."
+            },
+            {
+              "name": "Seated leg curl",
+              "sets": 2,
+              "reps": "10-12",
+              "rir": 4,
+              "restSec": 90,
+              "tempo": "2-1-1-1",
+              "notes": "Deload: half the sets, leave 4 reps in the tank."
+            },
+            {
+              "name": "Standing calf raise",
+              "sets": 2,
+              "reps": "10-15",
+              "rir": 4,
+              "restSec": 60,
+              "tempo": "2-2-1-1",
+              "notes": "Pause 2s in the stretch. Deload: half the sets, leave 4 reps in the tank.",
+              "swap": "Seated calf raise"
+            }
+          ]
+        },
+        {
+          "id": "upper",
+          "name": "Upper B",
+          "focus": "Chest, back, arms",
+          "muscles": ["chest", "lats", "shoulders", "biceps", "triceps"],
+          "exercises": [
+            {
+              "name": "Incline dumbbell press",
+              "sets": 2,
+              "reps": "8-10",
+              "rir": 4,
+              "restSec": 120,
+              "tempo": "2-1-1-0",
+              "notes": "Deload: half the sets, leave 4 reps in the tank."
+            },
+            {
+              "name": "Barbell row",
+              "sets": 2,
+              "reps": "8-10",
+              "rir": 4,
+              "restSec": 120,
+              "tempo": "2-0-1-1",
+              "notes": "Torso at 30° above parallel. Deload: half the sets, leave 4 reps in the tank.",
+              "swap": "T-bar row"
+            },
+            {
+              "name": "Dip (weighted)",
+              "sets": 2,
+              "reps": "8-12",
+              "rir": 4,
+              "restSec": 120,
+              "tempo": "2-0-1-0",
+              "notes": "Lean forward for chest, upright for triceps. Deload: half the sets, leave 4 reps in the tank.",
+              "swap": "Close-grip push-up"
+            },
+            {
+              "name": "Lat prayer pulldown",
+              "sets": 2,
+              "reps": "12-15",
+              "rir": 4,
+              "restSec": 75,
+              "tempo": "2-1-1-0",
+              "notes": "Deload: half the sets, leave 4 reps in the tank."
+            },
+            {
+              "name": "EZ-bar curl",
+              "sets": 2,
+              "reps": "8-10",
+              "rir": 4,
+              "restSec": 75,
+              "tempo": "2-0-1-0",
+              "notes": "Deload: half the sets, leave 4 reps in the tank."
+            },
+            {
+              "name": "Skullcrusher",
+              "sets": 2,
+              "reps": "8-10",
+              "rir": 4,
+              "restSec": 75,
+              "tempo": "3-0-1-0",
+              "notes": "Deload: half the sets, leave 4 reps in the tank."
+            }
+          ]
+        },
+        {
+          "id": "legs2",
+          "name": "Legs B",
+          "focus": "Glutes, hamstrings, core",
+          "muscles": ["glutes", "hamstrings", "quads", "core"],
+          "exercises": [
+            {
+              "name": "Conventional deadlift",
+              "sets": 2,
+              "reps": "4-6",
+              "rir": 4,
+              "restSec": 210,
+              "tempo": "1-0-1-0",
+              "notes": "Reset every rep. Straps allowed on the last set. Deload: half the sets, leave 4 reps in the tank.",
+              "swap": "Trap-bar deadlift"
+            },
+            {
+              "name": "Bulgarian split squat",
+              "sets": 2,
+              "reps": "8-10",
+              "rir": 4,
+              "restSec": 120,
+              "tempo": "3-0-1-0",
+              "notes": "Torso slightly forward to bias glutes. Deload: half the sets, leave 4 reps in the tank.",
+              "swap": "Walking lunge"
+            },
+            {
+              "name": "Leg extension",
+              "sets": 2,
+              "reps": "12-15",
+              "rir": 4,
+              "restSec": 75,
+              "tempo": "2-1-1-1",
+              "notes": "Deload: half the sets, leave 4 reps in the tank."
+            },
+            {
+              "name": "Lying leg curl",
+              "sets": 2,
+              "reps": "10-12",
+              "rir": 4,
+              "restSec": 75,
+              "tempo": "2-1-1-0",
+              "notes": "Deload: half the sets, leave 4 reps in the tank."
+            },
+            {
+              "name": "Cable crunch",
+              "sets": 2,
+              "reps": "12-15",
+              "rir": 4,
+              "restSec": 60,
+              "tempo": "2-1-1-1",
+              "notes": "Deload: half the sets, leave 4 reps in the tank."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "nutrition": {
+    "trainingDay": {
+      "targets": {
+        "kcal": 3050,
+        "protein": 190,
+        "carbs": 370,
+        "fat": 80
+      },
+      "meals": [
+        {
+          "name": "Breakfast",
+          "time": "7:00",
+          "items": ["4 whole eggs + 2 whites", "120 g oats with banana", "Black coffee"],
+          "macros": {
+            "kcal": 720,
+            "protein": 42,
+            "carbs": 88,
+            "fat": 22
+          }
+        },
+        {
+          "name": "Lunch",
+          "time": "12:00",
+          "items": [
+            "180 g chicken breast",
+            "250 g cooked jasmine rice",
+            "Mixed veg, 1 tbsp olive oil"
+          ],
+          "macros": {
+            "kcal": 740,
+            "protein": 52,
+            "carbs": 88,
+            "fat": 17
+          }
+        },
+        {
+          "name": "Pre-workout",
+          "time": "16:30",
+          "items": ["Rice cakes x3 with honey", "Whey isolate 30 g"],
+          "macros": {
+            "kcal": 330,
+            "protein": 28,
+            "carbs": 50,
+            "fat": 2
+          }
+        },
+        {
+          "name": "Dinner",
+          "time": "19:30",
+          "items": ["200 g lean beef mince", "300 g potatoes", "Greens + 1 tbsp butter"],
+          "macros": {
+            "kcal": 780,
+            "protein": 50,
+            "carbs": 78,
+            "fat": 28
+          }
+        },
+        {
+          "name": "Evening",
+          "time": "21:30",
+          "items": ["250 g Greek yoghurt", "Berries, 15 g almonds"],
+          "macros": {
+            "kcal": 300,
+            "protein": 26,
+            "carbs": 24,
+            "fat": 11
+          }
+        }
+      ]
+    },
+    "restDay": {
+      "targets": {
+        "kcal": 2650,
+        "protein": 190,
+        "carbs": 270,
+        "fat": 80
+      },
+      "meals": [
+        {
+          "name": "Breakfast",
+          "time": "8:00",
+          "items": ["4 eggs + 2 whites", "2 slices sourdough", "Avocado half"],
+          "macros": {
+            "kcal": 640,
+            "protein": 40,
+            "carbs": 44,
+            "fat": 32
+          }
+        },
+        {
+          "name": "Lunch",
+          "time": "12:30",
+          "items": ["180 g salmon", "200 g rice", "Salad, olive oil"],
+          "macros": {
+            "kcal": 700,
+            "protein": 46,
+            "carbs": 66,
+            "fat": 28
+          }
+        },
+        {
+          "name": "Snack",
+          "time": "16:00",
+          "items": ["Whey 30 g", "Apple", "20 g peanut butter"],
+          "macros": {
+            "kcal": 330,
+            "protein": 30,
+            "carbs": 28,
+            "fat": 11
+          }
+        },
+        {
+          "name": "Dinner",
+          "time": "19:00",
+          "items": ["200 g chicken thigh", "250 g potatoes", "Greens"],
+          "macros": {
+            "kcal": 680,
+            "protein": 48,
+            "carbs": 60,
+            "fat": 24
+          }
+        },
+        {
+          "name": "Evening",
+          "time": "21:30",
+          "items": ["Cottage cheese 250 g", "Berries"],
+          "macros": {
+            "kcal": 300,
+            "protein": 30,
+            "carbs": 20,
+            "fat": 9
+          }
+        }
+      ]
+    },
+    "grocery": [
+      {
+        "category": "Protein",
+        "items": [
+          "Eggs (30)",
+          "Chicken breast 1.5 kg",
+          "Lean beef mince 1 kg",
+          "Salmon fillets x4",
+          "Greek yoghurt 1 kg",
+          "Cottage cheese",
+          "Whey isolate"
+        ]
+      },
+      {
+        "category": "Carbs",
+        "items": [
+          "Jasmine rice 2 kg",
+          "Rolled oats 1 kg",
+          "Potatoes 2 kg",
+          "Sourdough",
+          "Rice cakes",
+          "Bananas, apples, berries"
+        ]
+      },
+      {
+        "category": "Fats & extras",
+        "items": ["Olive oil", "Butter", "Almonds", "Peanut butter", "Avocados x3", "Honey"]
+      },
+      {
+        "category": "Veg",
+        "items": ["Broccoli", "Spinach", "Peppers", "Frozen mixed veg", "Salad bags"]
+      }
+    ],
+    "supplements": [
+      {
+        "name": "Creatine monohydrate",
+        "dose": "5 g",
+        "timing": "Any time, daily",
+        "note": "Take it every day, training or not."
+      },
+      {
+        "name": "Whey isolate",
+        "dose": "30 g",
+        "timing": "Pre-workout and as a snack",
+        "note": "Fills the protein gap; food first."
+      },
+      {
+        "name": "Vitamin D3",
+        "dose": "2000 IU",
+        "timing": "With breakfast",
+        "note": "Calgary winters: worth it. Ask your doctor to confirm."
+      },
+      {
+        "name": "Omega-3",
+        "dose": "2 g EPA+DHA",
+        "timing": "With dinner",
+        "note": "Skip if you eat fish three times a week."
+      }
+    ],
+    "notes": "Weigh food raw where you can. Hit protein every day; carbs flex with the day type."
+  },
+  "progress": {
+    "strengthPRs": [
+      {
+        "lift": "Barbell bench press",
+        "weightKg": 110,
+        "reps": 6,
+        "date": "2026-10-19",
+        "previousKg": 105
+      },
+      {
+        "lift": "Back squat",
+        "weightKg": 150,
+        "reps": 6,
+        "date": "2026-10-21",
+        "previousKg": 142.5
+      },
+      {
+        "lift": "Conventional deadlift",
+        "weightKg": 190,
+        "reps": 5,
+        "date": "2026-10-17",
+        "previousKg": 180
+      },
+      {
+        "lift": "Weighted pull-up",
+        "weightKg": 30,
+        "reps": 7,
+        "date": "2026-10-15",
+        "previousKg": 25
+      },
+      {
+        "lift": "Seated dumbbell press (each)",
+        "weightKg": 40,
+        "reps": 9,
+        "date": "2026-10-12",
+        "previousKg": 37.5
+      }
+    ],
+    "bodyweight": [
+      {
+        "date": "2026-08-30",
+        "value": 82.4
+      },
+      {
+        "date": "2026-09-06",
+        "value": 83
+      },
+      {
+        "date": "2026-09-13",
+        "value": 83
+      },
+      {
+        "date": "2026-09-20",
+        "value": 83.6
+      },
+      {
+        "date": "2026-09-27",
+        "value": 83.8
+      },
+      {
+        "date": "2026-10-04",
+        "value": 84.4
+      },
+      {
+        "date": "2026-10-11",
+        "value": 84.4
+      },
+      {
+        "date": "2026-10-18",
+        "value": 85
+      },
+      {
+        "date": "2026-10-25",
+        "value": 85.2
+      }
+    ],
+    "waist": [
+      {
+        "date": "2026-08-30",
+        "value": 82
+      },
+      {
+        "date": "2026-09-06",
+        "value": 82.3
+      },
+      {
+        "date": "2026-09-13",
+        "value": 82.3
+      },
+      {
+        "date": "2026-09-20",
+        "value": 82.7
+      },
+      {
+        "date": "2026-09-27",
+        "value": 82.7
+      },
+      {
+        "date": "2026-10-04",
+        "value": 83
+      },
+      {
+        "date": "2026-10-11",
+        "value": 83
+      },
+      {
+        "date": "2026-10-18",
+        "value": 83.4
+      },
+      {
+        "date": "2026-10-25",
+        "value": 83.4
+      }
+    ],
+    "checkIns": [
+      {
+        "date": "2026-10-25",
+        "bodyweightKg": 85.2,
+        "waistCm": 83.4,
+        "sleep": 7,
+        "energy": 7,
+        "stress": 4,
+        "hunger": 5,
+        "adherence": 91,
+        "notes": "Great energy, appetite is up."
+      },
+      {
+        "date": "2026-10-18",
+        "bodyweightKg": 85,
+        "waistCm": 83.4,
+        "sleep": 8,
+        "energy": 8,
+        "stress": 3,
+        "hunger": 5,
+        "adherence": 93,
+        "notes": "Solid."
+      },
+      {
+        "date": "2026-10-11",
+        "bodyweightKg": 84.4,
+        "waistCm": 83,
+        "sleep": 7,
+        "energy": 7,
+        "stress": 4,
+        "hunger": 6,
+        "adherence": 87,
+        "notes": "Hungry on rest days."
+      },
+      {
+        "date": "2026-10-04",
+        "bodyweightKg": 84.4,
+        "waistCm": 83,
+        "sleep": 7,
+        "energy": 8,
+        "stress": 5,
+        "hunger": 4,
+        "adherence": 100,
+        "notes": "Hit every session."
+      },
+      {
+        "date": "2026-09-27",
+        "bodyweightKg": 83.8,
+        "waistCm": 82.7,
+        "sleep": 8,
+        "energy": 7,
+        "stress": 3,
+        "hunger": 5,
+        "adherence": 89,
+        "notes": "Shoulder a touch tight, warmed up longer."
+      },
+      {
+        "date": "2026-09-20",
+        "bodyweightKg": 83.6,
+        "waistCm": 82.7,
+        "sleep": 7,
+        "energy": 8,
+        "stress": 4,
+        "hunger": 4,
+        "adherence": 95,
+        "notes": "Best week yet. PRs on bench."
+      },
+      {
+        "date": "2026-09-13",
+        "bodyweightKg": 83,
+        "waistCm": 82.3,
+        "sleep": 6,
+        "energy": 6,
+        "stress": 6,
+        "hunger": 6,
+        "adherence": 90,
+        "notes": "Slept badly midweek."
+      },
+      {
+        "date": "2026-09-06",
+        "bodyweightKg": 83,
+        "waistCm": 82.3,
+        "sleep": 8,
+        "energy": 7,
+        "stress": 3,
+        "hunger": 5,
+        "adherence": 88,
+        "notes": "Travel for work, missed one meal."
+      },
+      {
+        "date": "2026-08-30",
+        "bodyweightKg": 82.4,
+        "waistCm": 82,
+        "sleep": 7,
+        "energy": 7,
+        "stress": 4,
+        "hunger": 5,
+        "adherence": 92,
+        "notes": "Felt strong, a bit tired by Friday."
+      }
+    ]
+  },
+  "recovery": null,
+  "guidance": {
+    "month": "October",
+    "habits": [
+      "Eat protein at every meal, 40 g per sitting.",
+      "Walk 8,000 steps on rest days.",
+      "In bed by 10:30 pm, phone out of the bedroom.",
+      "Log every working set."
+    ],
+    "focusCues": [
+      "Bench: bend the bar, drive your feet into the floor.",
+      "Pull-up: elbows to back pockets.",
+      "Squat: brace before you descend, knees track over toes."
+    ],
+    "education": [
+      {
+        "title": "Why 2 reps in reserve?",
+        "body": "Sets taken within 1-3 reps of failure build muscle almost as well as failure, with a fraction of the fatigue. That keeps next session productive."
+      },
+      {
+        "title": "How a lean bulk works",
+        "body": "A small surplus lets you gain mostly muscle. Gaining over 0.25-0.5% of bodyweight per week usually means extra fat, not extra muscle."
+      }
+    ],
+    "rules": [
+      "No ego lifting: the top set is the working weight, not a test.",
+      "Missed session? Do not double up; pick up where the plan is.",
+      "Message Cody if the scale moves more than 1 kg in a week."
+    ]
+  }
+}

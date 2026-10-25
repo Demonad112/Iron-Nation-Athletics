@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react'
 import type { ChangeEvent, FormEvent } from 'react'
-import { useSearchParams } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import { CheckCircle2, Copy, Mail } from 'lucide-react'
 import { formspreeEndpoint, interests, mailSubject } from '../content/contact'
 import { site } from '../content/site'
@@ -313,6 +313,43 @@ export function ContactForm() {
               aria-describedby={described('times', true)}
             />
           </Field>
+        </div>
+
+        <div className="mt-6">
+          <label
+            htmlFor="consent"
+            className="flex min-h-[2.75rem] cursor-pointer items-start gap-3 text-sm leading-relaxed"
+          >
+            <input
+              id="consent"
+              name="consent"
+              type="checkbox"
+              className="mt-1 h-5 w-5 shrink-0 accent-[var(--accent-fill)]"
+              checked={values.consent === 'yes'}
+              onChange={(e) => {
+                const next = { ...values, consent: e.target.checked ? 'yes' : '' }
+                setValues(next)
+                if (errors.consent)
+                  setErrors((p) => ({ ...p, consent: validateField('consent', next) }))
+              }}
+              aria-required="true"
+              aria-invalid={Boolean(errors.consent)}
+              aria-describedby={described('consent')}
+            />
+            <span>
+              I agree to be contacted about my enquiry. Please don&rsquo;t send health details
+              through this form; see the{' '}
+              <Link to="/privacy" className="underline hover:text-[var(--accent)]">
+                Privacy &amp; Terms
+              </Link>
+              .
+            </span>
+          </label>
+          {errors.consent && (
+            <p id="consent-error" className="field-error">
+              {errors.consent}
+            </p>
+          )}
         </div>
 
         <div className="mt-7 flex flex-wrap items-center gap-4">

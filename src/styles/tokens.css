@@ -3,7 +3,9 @@
   --bg: #0a0a0b;
   --surface: rgba(20, 20, 22, 0.62);
   --surface-solid: #141416;
-  --accent: #e23b2e;
+  --accent: #ee4d40; /* small red text on glass: 5.2:1 (brand red #e23b2e was 4.4:1) */
+  --accent-fill: #c92b1f; /* fill behind white text: 5.5:1 (the bright accent is only 4.3:1) */
+  --accent-fill-hover: #a81f15;
   --accent-2: #8a8f98;
   --text: #f4f4f5;
   --muted: #a1a1aa;
@@ -17,7 +19,9 @@
   --bg: #0b1220;
   --surface: rgba(18, 28, 48, 0.62);
   --surface-solid: #121c30;
-  --accent: #e8473b;
+  --accent: #f0584b; /* coral text on navy glass: 5.0:1 */
+  --accent-fill: #c53a2f; /* 5.2:1 with white */
+  --accent-fill-hover: #a82e24;
   --accent-2: #1f2f4a;
   --text: #eef2f7;
   --muted: #9aa7ba;

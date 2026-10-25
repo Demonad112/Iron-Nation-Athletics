@@ -28,7 +28,7 @@ function TierCard({ tier }: { tier: Tier }) {
       }`}
     >
       {tier.highlight && (
-        <span className="absolute -top-3 left-6 bg-[var(--accent)] px-3 py-1 font-label text-[0.65rem] font-bold uppercase tracking-[0.2em] text-[var(--accent-ink)]">
+        <span className="absolute -top-3 left-6 bg-[var(--accent-fill)] px-3 py-1 font-label text-[0.65rem] font-bold uppercase tracking-[0.2em] text-[var(--accent-ink)]">
           Most popular
         </span>
       )}
@@ -99,7 +99,7 @@ function ComparisonTable() {
                   key={c}
                   scope="col"
                   className={`px-4 py-3 text-center font-label text-xs uppercase tracking-[0.18em] ${
-                    i === 1 ? 'bg-[var(--accent)] text-[var(--accent-ink)]' : ''
+                    i === 1 ? 'bg-[var(--accent-fill)] text-[var(--accent-ink)]' : ''
                   }`}
                 >
                   {c}

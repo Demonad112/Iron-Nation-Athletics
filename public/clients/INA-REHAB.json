@@ -1,0 +1,1097 @@
+{
+  "code": "INA-REHAB",
+  "displayName": "Priya S.",
+  "persona": "Train + Recover bundle · returning from a shoulder strain",
+  "overview": {
+    "monthFocus": "Rebuild overhead tolerance, keep the lower body progressing",
+    "phase": "Return to training: stage 2 of 4",
+    "week": 6,
+    "totalWeeks": 12,
+    "coachNote": "Priya, the shoulder is behaving: range is back to 90% and the landmine press is pain-free. We add a little load at the next review. Keep the mobility homework daily; it is doing more than the gym sessions right now.",
+    "nextCheckIn": "2026-10-31",
+    "nextRmt": "2026-10-28T17:30:00",
+    "adherence": 88,
+    "mode": "in-person",
+    "goal": "Return to full overhead pressing without pain by week 12"
+  },
+  "training": [
+    {
+      "week": 1,
+      "label": "Week 6 · Rebuild",
+      "days": [
+        {
+          "id": "lower",
+          "name": "Lower Strength",
+          "focus": "Squat and hinge, no overhead load",
+          "muscles": ["quads", "glutes", "hamstrings", "core"],
+          "exercises": [
+            {
+              "name": "Goblet box squat",
+              "sets": 4,
+              "reps": "8-10",
+              "rir": 3,
+              "restSec": 120,
+              "tempo": "3-1-1-0",
+              "notes": "Hold the dumbbell at the chest; no bar on the back.",
+              "swap": "Leg press"
+            },
+            {
+              "name": "Trap-bar Romanian deadlift",
+              "sets": 3,
+              "reps": "8-10",
+              "rir": 3,
+              "restSec": 120,
+              "tempo": "3-1-1-0",
+              "notes": "Neutral grip keeps the shoulder happy."
+            },
+            {
+              "name": "Reverse lunge",
+              "sets": 3,
+              "reps": "10 / leg",
+              "rir": 3,
+              "restSec": 90,
+              "tempo": "2-0-1-0"
+            },
+            {
+              "name": "Single-leg hip thrust",
+              "sets": 3,
+              "reps": "10 / leg",
+              "rir": 2,
+              "restSec": 75,
+              "tempo": "1-2-1-0"
+            },
+            {
+              "name": "Dead bug",
+              "sets": 3,
+              "reps": "10 / side",
+              "rir": 3,
+              "restSec": 45,
+              "tempo": "3-1-3-0",
+              "notes": "Slow, ribs down."
+            }
+          ]
+        },
+        {
+          "id": "upperA",
+          "name": "Upper (shoulder-safe)",
+          "focus": "Pain-free pressing and pulling",
+          "muscles": ["chest", "lats", "triceps", "biceps"],
+          "exercises": [
+            {
+              "name": "Landmine press",
+              "sets": 3,
+              "reps": "10-12",
+              "rir": 3,
+              "restSec": 90,
+              "tempo": "2-0-1-0",
+              "notes": "Stop at the first twinge. Pain must stay below 3/10 and settle within an hour.",
+              "swap": "Neutral-grip dumbbell floor press"
+            },
+            {
+              "name": "Chest-supported row",
+              "sets": 4,
+              "reps": "10-12",
+              "rir": 2,
+              "restSec": 90,
+              "tempo": "2-1-1-1",
+              "notes": "Squeeze for 1s, no shrug."
+            },
+            {
+              "name": "Lat pulldown (neutral grip)",
+              "sets": 3,
+              "reps": "10-12",
+              "rir": 2,
+              "restSec": 90,
+              "tempo": "2-1-1-0",
+              "notes": "Stay short of full overhead reach for now."
+            },
+            {
+              "name": "Cable external rotation",
+              "sets": 3,
+              "reps": "15",
+              "rir": 3,
+              "restSec": 45,
+              "tempo": "2-1-2-0",
+              "notes": "Elbow glued to the side, light load."
+            },
+            {
+              "name": "Triceps rope pushdown",
+              "sets": 3,
+              "reps": "12-15",
+              "rir": 2,
+              "restSec": 60,
+              "tempo": "2-0-1-0"
+            },
+            {
+              "name": "Hammer curl",
+              "sets": 3,
+              "reps": "12",
+              "rir": 2,
+              "restSec": 60,
+              "tempo": "2-0-1-0"
+            }
+          ]
+        },
+        {
+          "id": "conditioning",
+          "name": "Conditioning + Prehab",
+          "focus": "Aerobic base and shoulder control",
+          "muscles": ["shoulders", "core", "calves"],
+          "exercises": [
+            {
+              "name": "Assault bike, steady",
+              "sets": 1,
+              "reps": "20 min",
+              "rir": 4,
+              "restSec": 0,
+              "notes": "Hold conversational pace, zone 2.",
+              "swap": "Brisk incline walk"
+            },
+            {
+              "name": "Scapular wall slide",
+              "sets": 3,
+              "reps": "12",
+              "rir": 4,
+              "restSec": 30,
+              "tempo": "3-1-3-0"
+            },
+            {
+              "name": "Prone Y-T-W raise",
+              "sets": 3,
+              "reps": "8 each",
+              "rir": 3,
+              "restSec": 45,
+              "tempo": "2-1-2-0",
+              "notes": "Light or bodyweight only."
+            },
+            {
+              "name": "Farmer carry",
+              "sets": 3,
+              "reps": "30 m",
+              "rir": 3,
+              "restSec": 60,
+              "notes": "Shoulders packed, tall posture."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "label": "Week 7 · Rebuild",
+      "days": [
+        {
+          "id": "lower",
+          "name": "Lower Strength",
+          "focus": "Squat and hinge, no overhead load",
+          "muscles": ["quads", "glutes", "hamstrings", "core"],
+          "exercises": [
+            {
+              "name": "Goblet box squat",
+              "sets": 4,
+              "reps": "8-10",
+              "rir": 3,
+              "restSec": 120,
+              "tempo": "3-1-1-0",
+              "notes": "Hold the dumbbell at the chest; no bar on the back.",
+              "swap": "Leg press"
+            },
+            {
+              "name": "Trap-bar Romanian deadlift",
+              "sets": 3,
+              "reps": "8-10",
+              "rir": 3,
+              "restSec": 120,
+              "tempo": "3-1-1-0",
+              "notes": "Neutral grip keeps the shoulder happy."
+            },
+            {
+              "name": "Reverse lunge",
+              "sets": 3,
+              "reps": "10 / leg",
+              "rir": 3,
+              "restSec": 90,
+              "tempo": "2-0-1-0"
+            },
+            {
+              "name": "Single-leg hip thrust",
+              "sets": 3,
+              "reps": "10 / leg",
+              "rir": 2,
+              "restSec": 75,
+              "tempo": "1-2-1-0"
+            },
+            {
+              "name": "Dead bug",
+              "sets": 3,
+              "reps": "10 / side",
+              "rir": 3,
+              "restSec": 45,
+              "tempo": "3-1-3-0",
+              "notes": "Slow, ribs down."
+            }
+          ]
+        },
+        {
+          "id": "upperA",
+          "name": "Upper (shoulder-safe)",
+          "focus": "Pain-free pressing and pulling",
+          "muscles": ["chest", "lats", "triceps", "biceps"],
+          "exercises": [
+            {
+              "name": "Landmine press",
+              "sets": 3,
+              "reps": "10-12",
+              "rir": 3,
+              "restSec": 90,
+              "tempo": "2-0-1-0",
+              "notes": "Stop at the first twinge. Pain must stay below 3/10 and settle within an hour.",
+              "swap": "Neutral-grip dumbbell floor press"
+            },
+            {
+              "name": "Chest-supported row",
+              "sets": 4,
+              "reps": "10-12",
+              "rir": 2,
+              "restSec": 90,
+              "tempo": "2-1-1-1",
+              "notes": "Squeeze for 1s, no shrug."
+            },
+            {
+              "name": "Lat pulldown (neutral grip)",
+              "sets": 3,
+              "reps": "10-12",
+              "rir": 2,
+              "restSec": 90,
+              "tempo": "2-1-1-0",
+              "notes": "Stay short of full overhead reach for now."
+            },
+            {
+              "name": "Cable external rotation",
+              "sets": 3,
+              "reps": "15",
+              "rir": 3,
+              "restSec": 45,
+              "tempo": "2-1-2-0",
+              "notes": "Elbow glued to the side, light load."
+            },
+            {
+              "name": "Triceps rope pushdown",
+              "sets": 3,
+              "reps": "12-15",
+              "rir": 2,
+              "restSec": 60,
+              "tempo": "2-0-1-0"
+            },
+            {
+              "name": "Hammer curl",
+              "sets": 3,
+              "reps": "12",
+              "rir": 2,
+              "restSec": 60,
+              "tempo": "2-0-1-0"
+            }
+          ]
+        },
+        {
+          "id": "conditioning",
+          "name": "Conditioning + Prehab",
+          "focus": "Aerobic base and shoulder control",
+          "muscles": ["shoulders", "core", "calves"],
+          "exercises": [
+            {
+              "name": "Assault bike, steady",
+              "sets": 1,
+              "reps": "20 min",
+              "rir": 4,
+              "restSec": 0,
+              "notes": "Hold conversational pace, zone 2.",
+              "swap": "Brisk incline walk"
+            },
+            {
+              "name": "Scapular wall slide",
+              "sets": 3,
+              "reps": "12",
+              "rir": 4,
+              "restSec": 30,
+              "tempo": "3-1-3-0"
+            },
+            {
+              "name": "Prone Y-T-W raise",
+              "sets": 3,
+              "reps": "8 each",
+              "rir": 3,
+              "restSec": 45,
+              "tempo": "2-1-2-0",
+              "notes": "Light or bodyweight only."
+            },
+            {
+              "name": "Farmer carry",
+              "sets": 3,
+              "reps": "30 m",
+              "rir": 3,
+              "restSec": 60,
+              "notes": "Shoulders packed, tall posture."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "label": "Week 8 · Load",
+      "days": [
+        {
+          "id": "lower",
+          "name": "Lower Strength",
+          "focus": "Squat and hinge, no overhead load",
+          "muscles": ["quads", "glutes", "hamstrings", "core"],
+          "exercises": [
+            {
+              "name": "Goblet box squat",
+              "sets": 4,
+              "reps": "8-10",
+              "rir": 2,
+              "restSec": 120,
+              "tempo": "3-1-1-0",
+              "notes": "Hold the dumbbell at the chest; no bar on the back.",
+              "swap": "Leg press"
+            },
+            {
+              "name": "Trap-bar Romanian deadlift",
+              "sets": 3,
+              "reps": "8-10",
+              "rir": 2,
+              "restSec": 120,
+              "tempo": "3-1-1-0",
+              "notes": "Neutral grip keeps the shoulder happy."
+            },
+            {
+              "name": "Reverse lunge",
+              "sets": 3,
+              "reps": "10 / leg",
+              "rir": 2,
+              "restSec": 90,
+              "tempo": "2-0-1-0"
+            },
+            {
+              "name": "Single-leg hip thrust",
+              "sets": 3,
+              "reps": "10 / leg",
+              "rir": 1,
+              "restSec": 75,
+              "tempo": "1-2-1-0"
+            },
+            {
+              "name": "Dead bug",
+              "sets": 3,
+              "reps": "10 / side",
+              "rir": 2,
+              "restSec": 45,
+              "tempo": "3-1-3-0",
+              "notes": "Slow, ribs down."
+            }
+          ]
+        },
+        {
+          "id": "upperA",
+          "name": "Upper (shoulder-safe)",
+          "focus": "Pain-free pressing and pulling",
+          "muscles": ["chest", "lats", "triceps", "biceps"],
+          "exercises": [
+            {
+              "name": "Landmine press",
+              "sets": 3,
+              "reps": "10-12",
+              "rir": 2,
+              "restSec": 90,
+              "tempo": "2-0-1-0",
+              "notes": "Stop at the first twinge. Pain must stay below 3/10 and settle within an hour.",
+              "swap": "Neutral-grip dumbbell floor press"
+            },
+            {
+              "name": "Chest-supported row",
+              "sets": 4,
+              "reps": "10-12",
+              "rir": 1,
+              "restSec": 90,
+              "tempo": "2-1-1-1",
+              "notes": "Squeeze for 1s, no shrug."
+            },
+            {
+              "name": "Lat pulldown (neutral grip)",
+              "sets": 3,
+              "reps": "10-12",
+              "rir": 1,
+              "restSec": 90,
+              "tempo": "2-1-1-0",
+              "notes": "Stay short of full overhead reach for now."
+            },
+            {
+              "name": "Cable external rotation",
+              "sets": 3,
+              "reps": "15",
+              "rir": 2,
+              "restSec": 45,
+              "tempo": "2-1-2-0",
+              "notes": "Elbow glued to the side, light load."
+            },
+            {
+              "name": "Triceps rope pushdown",
+              "sets": 3,
+              "reps": "12-15",
+              "rir": 1,
+              "restSec": 60,
+              "tempo": "2-0-1-0"
+            },
+            {
+              "name": "Hammer curl",
+              "sets": 3,
+              "reps": "12",
+              "rir": 1,
+              "restSec": 60,
+              "tempo": "2-0-1-0"
+            }
+          ]
+        },
+        {
+          "id": "conditioning",
+          "name": "Conditioning + Prehab",
+          "focus": "Aerobic base and shoulder control",
+          "muscles": ["shoulders", "core", "calves"],
+          "exercises": [
+            {
+              "name": "Assault bike, steady",
+              "sets": 1,
+              "reps": "20 min",
+              "rir": 3,
+              "restSec": 0,
+              "notes": "Hold conversational pace, zone 2.",
+              "swap": "Brisk incline walk"
+            },
+            {
+              "name": "Scapular wall slide",
+              "sets": 3,
+              "reps": "12",
+              "rir": 3,
+              "restSec": 30,
+              "tempo": "3-1-3-0"
+            },
+            {
+              "name": "Prone Y-T-W raise",
+              "sets": 3,
+              "reps": "8 each",
+              "rir": 2,
+              "restSec": 45,
+              "tempo": "2-1-2-0",
+              "notes": "Light or bodyweight only."
+            },
+            {
+              "name": "Farmer carry",
+              "sets": 3,
+              "reps": "30 m",
+              "rir": 2,
+              "restSec": 60,
+              "notes": "Shoulders packed, tall posture."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "label": "Week 9 · Reassess",
+      "days": [
+        {
+          "id": "lower",
+          "name": "Lower Strength",
+          "focus": "Squat and hinge, no overhead load",
+          "muscles": ["quads", "glutes", "hamstrings", "core"],
+          "exercises": [
+            {
+              "name": "Goblet box squat",
+              "sets": 2,
+              "reps": "8-10",
+              "rir": 4,
+              "restSec": 120,
+              "tempo": "3-1-1-0",
+              "notes": "Hold the dumbbell at the chest; no bar on the back. Deload: half the sets, leave 4 reps in the tank.",
+              "swap": "Leg press"
+            },
+            {
+              "name": "Trap-bar Romanian deadlift",
+              "sets": 2,
+              "reps": "8-10",
+              "rir": 4,
+              "restSec": 120,
+              "tempo": "3-1-1-0",
+              "notes": "Neutral grip keeps the shoulder happy. Deload: half the sets, leave 4 reps in the tank."
+            },
+            {
+              "name": "Reverse lunge",
+              "sets": 2,
+              "reps": "10 / leg",
+              "rir": 4,
+              "restSec": 90,
+              "tempo": "2-0-1-0",
+              "notes": "Deload: half the sets, leave 4 reps in the tank."
+            },
+            {
+              "name": "Single-leg hip thrust",
+              "sets": 2,
+              "reps": "10 / leg",
+              "rir": 4,
+              "restSec": 75,
+              "tempo": "1-2-1-0",
+              "notes": "Deload: half the sets, leave 4 reps in the tank."
+            },
+            {
+              "name": "Dead bug",
+              "sets": 2,
+              "reps": "10 / side",
+              "rir": 4,
+              "restSec": 45,
+              "tempo": "3-1-3-0",
+              "notes": "Slow, ribs down. Deload: half the sets, leave 4 reps in the tank."
+            }
+          ]
+        },
+        {
+          "id": "upperA",
+          "name": "Upper (shoulder-safe)",
+          "focus": "Pain-free pressing and pulling",
+          "muscles": ["chest", "lats", "triceps", "biceps"],
+          "exercises": [
+            {
+              "name": "Landmine press",
+              "sets": 2,
+              "reps": "10-12",
+              "rir": 4,
+              "restSec": 90,
+              "tempo": "2-0-1-0",
+              "notes": "Stop at the first twinge. Pain must stay below 3/10 and settle within an hour. Deload: half the sets, leave 4 reps in the tank.",
+              "swap": "Neutral-grip dumbbell floor press"
+            },
+            {
+              "name": "Chest-supported row",
+              "sets": 2,
+              "reps": "10-12",
+              "rir": 4,
+              "restSec": 90,
+              "tempo": "2-1-1-1",
+              "notes": "Squeeze for 1s, no shrug. Deload: half the sets, leave 4 reps in the tank."
+            },
+            {
+              "name": "Lat pulldown (neutral grip)",
+              "sets": 2,
+              "reps": "10-12",
+              "rir": 4,
+              "restSec": 90,
+              "tempo": "2-1-1-0",
+              "notes": "Stay short of full overhead reach for now. Deload: half the sets, leave 4 reps in the tank."
+            },
+            {
+              "name": "Cable external rotation",
+              "sets": 2,
+              "reps": "15",
+              "rir": 4,
+              "restSec": 45,
+              "tempo": "2-1-2-0",
+              "notes": "Elbow glued to the side, light load. Deload: half the sets, leave 4 reps in the tank."
+            },
+            {
+              "name": "Triceps rope pushdown",
+              "sets": 2,
+              "reps": "12-15",
+              "rir": 4,
+              "restSec": 60,
+              "tempo": "2-0-1-0",
+              "notes": "Deload: half the sets, leave 4 reps in the tank."
+            },
+            {
+              "name": "Hammer curl",
+              "sets": 2,
+              "reps": "12",
+              "rir": 4,
+              "restSec": 60,
+              "tempo": "2-0-1-0",
+              "notes": "Deload: half the sets, leave 4 reps in the tank."
+            }
+          ]
+        },
+        {
+          "id": "conditioning",
+          "name": "Conditioning + Prehab",
+          "focus": "Aerobic base and shoulder control",
+          "muscles": ["shoulders", "core", "calves"],
+          "exercises": [
+            {
+              "name": "Assault bike, steady",
+              "sets": 2,
+              "reps": "20 min",
+              "rir": 4,
+              "restSec": 0,
+              "notes": "Hold conversational pace, zone 2. Deload: half the sets, leave 4 reps in the tank.",
+              "swap": "Brisk incline walk"
+            },
+            {
+              "name": "Scapular wall slide",
+              "sets": 2,
+              "reps": "12",
+              "rir": 4,
+              "restSec": 30,
+              "tempo": "3-1-3-0",
+              "notes": "Deload: half the sets, leave 4 reps in the tank."
+            },
+            {
+              "name": "Prone Y-T-W raise",
+              "sets": 2,
+              "reps": "8 each",
+              "rir": 4,
+              "restSec": 45,
+              "tempo": "2-1-2-0",
+              "notes": "Light or bodyweight only. Deload: half the sets, leave 4 reps in the tank."
+            },
+            {
+              "name": "Farmer carry",
+              "sets": 2,
+              "reps": "30 m",
+              "rir": 4,
+              "restSec": 60,
+              "notes": "Shoulders packed, tall posture. Deload: half the sets, leave 4 reps in the tank."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "nutrition": {
+    "trainingDay": {
+      "targets": {
+        "kcal": 2150,
+        "protein": 130,
+        "carbs": 240,
+        "fat": 62
+      },
+      "meals": [
+        {
+          "name": "Breakfast",
+          "time": "7:30",
+          "items": ["Greek yoghurt 250 g", "Granola 40 g", "Berries"],
+          "macros": {
+            "kcal": 450,
+            "protein": 32,
+            "carbs": 52,
+            "fat": 12
+          }
+        },
+        {
+          "name": "Lunch",
+          "time": "12:30",
+          "items": ["Chicken wrap, wholewheat", "Side salad", "Fruit"],
+          "macros": {
+            "kcal": 560,
+            "protein": 40,
+            "carbs": 62,
+            "fat": 16
+          }
+        },
+        {
+          "name": "Snack",
+          "time": "16:00",
+          "items": ["Whey 25 g", "Banana", "Almonds 10 g"],
+          "macros": {
+            "kcal": 310,
+            "protein": 28,
+            "carbs": 30,
+            "fat": 9
+          }
+        },
+        {
+          "name": "Dinner",
+          "time": "19:00",
+          "items": ["Salmon 150 g", "Quinoa 150 g cooked", "Roasted veg"],
+          "macros": {
+            "kcal": 620,
+            "protein": 38,
+            "carbs": 58,
+            "fat": 22
+          }
+        }
+      ]
+    },
+    "restDay": {
+      "targets": {
+        "kcal": 1950,
+        "protein": 130,
+        "carbs": 195,
+        "fat": 62
+      },
+      "meals": [
+        {
+          "name": "Breakfast",
+          "time": "8:00",
+          "items": ["3 eggs", "Toast 2 slices", "Tomato, spinach"],
+          "macros": {
+            "kcal": 430,
+            "protein": 26,
+            "carbs": 36,
+            "fat": 18
+          }
+        },
+        {
+          "name": "Lunch",
+          "time": "12:30",
+          "items": ["Lentil + chicken bowl", "Greens"],
+          "macros": {
+            "kcal": 540,
+            "protein": 42,
+            "carbs": 56,
+            "fat": 13
+          }
+        },
+        {
+          "name": "Snack",
+          "time": "16:00",
+          "items": ["Skyr 200 g", "Fruit"],
+          "macros": {
+            "kcal": 220,
+            "protein": 22,
+            "carbs": 28,
+            "fat": 1
+          }
+        },
+        {
+          "name": "Dinner",
+          "time": "19:00",
+          "items": ["Turkey stir-fry", "Rice 120 g cooked"],
+          "macros": {
+            "kcal": 560,
+            "protein": 40,
+            "carbs": 62,
+            "fat": 12
+          }
+        }
+      ]
+    },
+    "grocery": [
+      {
+        "category": "Protein",
+        "items": ["Chicken breast", "Salmon", "Eggs", "Skyr / Greek yoghurt", "Whey"]
+      },
+      {
+        "category": "Carbs",
+        "items": ["Quinoa", "Wholewheat wraps", "Rice", "Lentils", "Berries, bananas"]
+      },
+      {
+        "category": "Anti-inflammatory extras",
+        "items": ["Olive oil", "Walnuts", "Turmeric", "Leafy greens"]
+      }
+    ],
+    "supplements": [
+      {
+        "name": "Omega-3",
+        "dose": "2 g EPA+DHA",
+        "timing": "With dinner",
+        "note": "Supports joint comfort; check with your doctor."
+      },
+      {
+        "name": "Vitamin D3",
+        "dose": "2000 IU",
+        "timing": "With breakfast",
+        "note": "Calgary winters."
+      },
+      {
+        "name": "Collagen + vitamin C",
+        "dose": "10 g + 50 mg",
+        "timing": "45 min pre-rehab block",
+        "note": "Evidence is modest; optional."
+      }
+    ],
+    "notes": "Maintenance-plus calories: enough to repair tissue, not enough to add fat while training is lighter."
+  },
+  "progress": {
+    "strengthPRs": [
+      {
+        "lift": "Goblet box squat",
+        "weightKg": 28,
+        "reps": 10,
+        "date": "2026-10-14",
+        "previousKg": 24
+      },
+      {
+        "lift": "Trap-bar Romanian deadlift",
+        "weightKg": 80,
+        "reps": 8,
+        "date": "2026-10-16",
+        "previousKg": 70
+      },
+      {
+        "lift": "Landmine press",
+        "weightKg": 17.5,
+        "reps": 10,
+        "date": "2026-10-20",
+        "previousKg": 12.5
+      },
+      {
+        "lift": "Chest-supported row",
+        "weightKg": 42.5,
+        "reps": 11,
+        "date": "2026-10-19",
+        "previousKg": 37.5
+      }
+    ],
+    "bodyweight": [
+      {
+        "date": "2026-09-06",
+        "value": 66
+      },
+      {
+        "date": "2026-09-13",
+        "value": 66.2
+      },
+      {
+        "date": "2026-09-20",
+        "value": 66.1
+      },
+      {
+        "date": "2026-09-27",
+        "value": 66.5
+      },
+      {
+        "date": "2026-10-04",
+        "value": 66.5
+      },
+      {
+        "date": "2026-10-11",
+        "value": 66.7
+      },
+      {
+        "date": "2026-10-18",
+        "value": 66.6
+      },
+      {
+        "date": "2026-10-25",
+        "value": 67
+      }
+    ],
+    "waist": [
+      {
+        "date": "2026-09-06",
+        "value": 74
+      },
+      {
+        "date": "2026-09-13",
+        "value": 73.8
+      },
+      {
+        "date": "2026-09-20",
+        "value": 73.8
+      },
+      {
+        "date": "2026-09-27",
+        "value": 73.6
+      },
+      {
+        "date": "2026-10-04",
+        "value": 73.4
+      },
+      {
+        "date": "2026-10-11",
+        "value": 73.5
+      },
+      {
+        "date": "2026-10-18",
+        "value": 73.2
+      },
+      {
+        "date": "2026-10-25",
+        "value": 73
+      }
+    ],
+    "checkIns": [
+      {
+        "date": "2026-10-25",
+        "bodyweightKg": 67,
+        "waistCm": 73,
+        "sleep": 8,
+        "energy": 8,
+        "stress": 3,
+        "hunger": 5,
+        "adherence": 90,
+        "notes": "Range near full."
+      },
+      {
+        "date": "2026-10-18",
+        "bodyweightKg": 66.6,
+        "waistCm": 73.2,
+        "sleep": 7,
+        "energy": 7,
+        "stress": 4,
+        "hunger": 6,
+        "adherence": 88,
+        "notes": "Sleep better on the painful side."
+      },
+      {
+        "date": "2026-10-11",
+        "bodyweightKg": 66.7,
+        "waistCm": 73.5,
+        "sleep": 7,
+        "energy": 8,
+        "stress": 5,
+        "hunger": 4,
+        "adherence": 89,
+        "notes": "Treatment helped a lot."
+      },
+      {
+        "date": "2026-10-04",
+        "bodyweightKg": 66.5,
+        "waistCm": 73.4,
+        "sleep": 8,
+        "energy": 7,
+        "stress": 3,
+        "hunger": 5,
+        "adherence": 86,
+        "notes": "Stiff after desk-heavy day."
+      },
+      {
+        "date": "2026-09-27",
+        "bodyweightKg": 66.5,
+        "waistCm": 73.6,
+        "sleep": 7,
+        "energy": 8,
+        "stress": 4,
+        "hunger": 4,
+        "adherence": 92,
+        "notes": "First pain-free landmine set."
+      },
+      {
+        "date": "2026-09-20",
+        "bodyweightKg": 66.1,
+        "waistCm": 73.8,
+        "sleep": 6,
+        "energy": 6,
+        "stress": 6,
+        "hunger": 6,
+        "adherence": 82,
+        "notes": "Missed one session, work travel."
+      },
+      {
+        "date": "2026-09-13",
+        "bodyweightKg": 66.2,
+        "waistCm": 73.8,
+        "sleep": 8,
+        "energy": 7,
+        "stress": 3,
+        "hunger": 5,
+        "adherence": 90,
+        "notes": "Mobility daily, felt looser."
+      },
+      {
+        "date": "2026-09-06",
+        "bodyweightKg": 66,
+        "waistCm": 74,
+        "sleep": 7,
+        "energy": 7,
+        "stress": 4,
+        "hunger": 5,
+        "adherence": 85,
+        "notes": "Shoulder 3/10 at night, better by morning."
+      }
+    ]
+  },
+  "recovery": {
+    "sessions": [
+      {
+        "date": "2026-10-21",
+        "therapist": "Cody I., R.M.T.",
+        "durationMin": 60,
+        "service": "Therapeutic / Injury Rehab",
+        "areas": ["shoulders", "traps", "lats", "triceps"],
+        "notes": "Upper trap and pec minor tone down. Active release on the infraspinatus. Overhead flexion improved from 150° to 168° in the session."
+      },
+      {
+        "date": "2026-10-07",
+        "therapist": "Cody I., R.M.T.",
+        "durationMin": 60,
+        "service": "Therapeutic / Injury Rehab",
+        "areas": ["shoulders", "chest", "biceps"],
+        "notes": "Anterior shoulder sensitive on palpation, worked around it with myofascial release. Gave new wall-slide progression."
+      },
+      {
+        "date": "2026-09-23",
+        "therapist": "Cody I., R.M.T.",
+        "durationMin": 45,
+        "service": "Assessment + treatment",
+        "areas": ["shoulders", "traps", "lowerBack"],
+        "notes": "Initial assessment after a strain during overhead pressing. Painful arc 90-120°. Plan: reduce load, restore scapular rhythm, treat every second week."
+      }
+    ],
+    "treatedAreas": ["shoulders", "traps", "lats", "chest"],
+    "mobility": {
+      "title": "Daily shoulder reset",
+      "frequency": "10 minutes, once a day (twice on desk days)",
+      "drills": [
+        {
+          "name": "Pec doorway stretch",
+          "prescription": "3 x 30s each side",
+          "cue": "Elbow at shoulder height; feel it across the chest, not the front of the joint."
+        },
+        {
+          "name": "Thoracic extension over foam roller",
+          "prescription": "2 x 8 reps",
+          "cue": "Support the head, exhale as you extend."
+        },
+        {
+          "name": "Sleeper stretch",
+          "prescription": "3 x 30s",
+          "cue": "Gentle only. Stop short of pinching."
+        },
+        {
+          "name": "Wall slide with lift-off",
+          "prescription": "2 x 10",
+          "cue": "Forearms stay on the wall, ribs down."
+        },
+        {
+          "name": "Band pull-apart",
+          "prescription": "2 x 20",
+          "cue": "Light band. Pull to the collarbone, shoulders away from ears."
+        }
+      ]
+    },
+    "nextBooking": {
+      "date": "2026-10-28T17:30:00",
+      "service": "Therapeutic / Injury Rehab",
+      "durationMin": 60
+    }
+  },
+  "guidance": {
+    "month": "October",
+    "habits": [
+      "Mobility reset daily, even on rest days.",
+      "Break up desk time: stand and roll shoulders every hour.",
+      "Sleep on your back or the pain-free side.",
+      "Log pain 0-10 after every session."
+    ],
+    "focusCues": [
+      "Shoulder blades down and back before every press.",
+      "Row to the hip, not the chin.",
+      "Squat: brace before you descend."
+    ],
+    "education": [
+      {
+        "title": "Pain rule for rehab",
+        "body": "Pain up to 3/10 that settles within an hour is generally acceptable. Anything above that, or lingering to the next day, means we scale back."
+      },
+      {
+        "title": "Why we keep training legs",
+        "body": "Heavy lower-body work keeps total-body strength and appetite for recovery high while the shoulder rebuilds, and slows detraining."
+      }
+    ],
+    "rules": [
+      "No overhead barbell work until cleared in week 9.",
+      "If night pain wakes you, message Cody before the next session.",
+      "Mobility homework counts as training: tick it off."
+    ]
+  }
+}

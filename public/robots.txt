@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Showcase preview on GitHub Pages. Update the host when the custom domain goes live.
+Sitemap: https://demonad112.github.io/Iron-Nation-Athletics/sitemap.xml
