@@ -50,10 +50,10 @@ function indexHtmlFromSite(): Plugin {
   }
 }
 
-// GitHub Pages serves the site under /Iron-Nation-Athletics/.
-// Switch to '/' when moving to a custom domain (see README).
+// Base path is set per host: Cloudflare Pages (root domain) builds with '/' (the default), and the
+// GitHub Pages workflow sets BASE_PATH=/Iron-Nation-Athletics/ (see .github/workflows/deploy.yml).
 export default defineConfig({
-  base: '/Iron-Nation-Athletics/',
+  base: process.env.BASE_PATH ?? '/',
   plugins: [react(), indexHtmlFromSite()],
   build: { chunkSizeWarningLimit: 700 },
 })
