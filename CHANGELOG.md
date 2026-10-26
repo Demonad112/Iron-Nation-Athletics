@@ -1,5 +1,17 @@
 # Changelog
 
+## Hosting: Cloudflare Pages support
+
+### Decisions
+
+- **Base path is env-driven.** `vite.config.ts` uses `BASE_PATH` (default `/`), so a Cloudflare
+  Pages build at the root domain serves `/assets/...`. This deviates from the fixed
+  `/Iron-Nation-Athletics/` base in BUILD_PLAN §2. The GitHub Pages workflow sets
+  `BASE_PATH=/Iron-Nation-Athletics/` on its build step, so that deploy is unchanged.
+- **Canonical, Open Graph, sitemap and robots URLs still point at `demonad112.github.io`.** They
+  change once the production domain is known (`site.ts` `url`, `index.html`, `public/sitemap.xml`,
+  `public/robots.txt`). `TODO(client)`: confirm the production domain.
+
 ## Batch 1: Foundation, design system, Home, deploy
 
 ### Built
