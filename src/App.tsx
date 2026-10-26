@@ -34,7 +34,7 @@ export default function App() {
           <Route
             path="portal"
             element={
-              <Suspense fallback={<PortalLoading label="Loading the client portal…" />}>
+              <Suspense fallback={<PortalLoading fullPage label="Loading the client portal…" />}>
                 <Portal />
               </Suspense>
             }

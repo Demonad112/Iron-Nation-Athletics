@@ -32,7 +32,7 @@ function TierCard({ tier }: { tier: Tier }) {
           Most popular
         </span>
       )}
-      <h3 className="font-heading text-3xl uppercase">{tier.name}</h3>
+      <h2 className="font-heading text-3xl uppercase">{tier.name}</h2>
       <p className="mt-4 flex items-baseline gap-2">
         <span className="font-heading tabular text-6xl">{cad.format(tier.price)}</span>
         <span className="text-sm text-muted">CAD {tier.unit}</span>
@@ -83,7 +83,12 @@ function ComparisonTable() {
   return (
     <div className="mt-14">
       <h2 className="font-heading text-3xl uppercase md:text-4xl">Compare PT tiers</h2>
-      <div className="glass relative mt-5 overflow-x-auto">
+      <div
+        className="glass relative mt-5 overflow-x-auto"
+        tabIndex={0}
+        role="region"
+        aria-label="PT tier comparison table, scrollable"
+      >
         <table className="w-full min-w-[34rem] border-collapse text-left text-sm">
           <caption className="sr-only">Comparison of in-person personal training tiers</caption>
           <thead>

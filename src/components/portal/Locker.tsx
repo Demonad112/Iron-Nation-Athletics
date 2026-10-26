@@ -28,7 +28,7 @@ export function Locker({ initialCode, loading, error, errorTick, onSubmit }: Pro
   }
 
   return (
-    <section className="container-ina py-14 md:py-20">
+    <section className="container-ina min-h-[100svh] py-14 md:py-20">
       <div className="mx-auto max-w-xl">
         <p className="eyebrow mb-4 flex items-center gap-2">
           <LockKeyhole size={14} aria-hidden /> Clients

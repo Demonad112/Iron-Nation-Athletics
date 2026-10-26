@@ -124,3 +124,96 @@
 
 - Nothing blocked. Formspree endpoint, real booking URLs, map embed, photos and all copy remain
   `TODO(client)`.
+
+## Batch 3: Client Portal, polish, QA
+
+### Batch 2 verification (before starting)
+
+- Deploy run on `10c30dc` (main) is green. The live URL, `og-image.png`, favicon and logos return 200.
+  `#/pricing?tab=bundles` deep-links. Nothing was broken.
+- One Batch 1 bug found and fixed: the "Skip to content" link used `href="#main"`, which HashRouter
+  reads as a route (it silently redirected Home). It now moves focus to `<main>` instead.
+
+### Built
+
+- **Portal** (`src/pages/Portal.tsx`, `src/components/portal/`), lazy-loaded so Recharts stays out of the
+  main bundle (main ≈ 135 kB gzip, portal chunk ≈ 114 kB gzip). Locker with accessible code input, demo
+  chips, barbell loading bar, shake on a bad code, distinct messages for bad format, not found, network
+  failure and malformed JSON. Deep link `#/portal?code=INA-DEMO`. Remembers the last code; Sign out clears it.
+- **Dashboard tabs** (reuses `Tabs`): Overview (adherence ring with text alternative, week counter,
+  event countdown for contest prep), Training (week selector, ticks persisted per code), Nutrition,
+  Check-In (sliders, draft saved as you type, copy with textarea fallback, print), Progress (Recharts
+  charts with a "View as table" disclosure, PR table, history), Recovery (MyoMedic palette, coral muscle
+  map, session log, mobility routine, booking link, empty state with "Add MyoMedic"), Guidance.
+- **Data**: `src/types/client.ts`, three profiles in `public/clients/`, `scripts/validate-clients.ts`
+  (hand-rolled, no dependency) run from `prebuild` and CI. Verified it fails the build with readable
+  messages on a deliberately broken file (bad number, unknown muscle, missing field, bad date); file restored.
+- **Carry-overs**: contrast (see Decisions), solid header, 404 page, error boundary, axe fixes.
+- **Additions**: Privacy & Terms page + required consent checkbox; `robots.txt`, `sitemap.xml`, web
+  manifest, apple-touch/192/512 icons (`scripts/generate-icons.mjs`); LocalBusiness JSON-LD generated
+  into `index.html` from `site.ts` at build time (`vite.config.ts`); route-change focus to the `<h1>`;
+  `aria-current` styling on nav, portal link and footer; print stylesheet (Pricing and check-in text);
+  analytics slot (`site.analytics`, off); `<noscript>` + static fallback content; `color-scheme` meta;
+  `scripts/smoke.mjs`; CI runs `prettier --check`, `validate`, lint and build, and now also on pull
+  requests (deploy job is skipped for PRs).
+
+### Decisions
+
+- **Contrast**: white text now sits on a darker `--accent-fill` (INA `#c92b1f` 5.5:1, MyoMedic `#c53a2f`
+  5.2:1) for buttons, CTA band, pressed chips and badges. The bright accent used as _text_ was raised to
+  `#ee4d40` (INA) and `#f0584b` (MyoMedic) because axe measured 4.4:1 on glass. Brand red `#e23b2e` is
+  unchanged in the logo, favicon and OG image. Muted text (`#a1a1aa`) measures 7.7:1; Sample badge ≈ 11:1.
+- **404 instead of redirect** (replaces the Batch 1 decision). Unknown routes show a 404 page with links.
+- **Skip link** moves focus rather than changing the hash (HashRouter).
+- **Static JSON is not private**; the portal banner says so and README repeats it. Code format is checked
+  against `/^INA-[A-Z0-9]{2,12}$/` before fetch. A bare `DEMO` is accepted as `INA-DEMO`.
+- **Decorative step numerals** (Home, Online) are drawn with `::before` content so contrast audits skip them.
+- **Adherence ring / macros** use `role="img"` / `role="meter"` with spoken values; charts have a
+  summary label and a table alternative.
+- **Check-in** autosaves on every change (so a reload never loses data); "Save check-in" stamps a time.
+- **Sitemap lists the root only** (hash URLs are not indexable) – documented in README.
+- **Fonts load non-blocking** (`media="print"` swap) to fix a render-blocking audit; text paints in the
+  fallback face first.
+- **Portal sections reserve a full screen** (`min-h-[100svh]`) to stop the footer jumping when the
+  dashboard replaces the loading view (CLS 0.62 → 0.1).
+- **Smoke test is not a deploy gate**; it needs a browser download and hasn't run in CI yet.
+- Demo dates are fixed (Oct–Nov 2026); relative labels ("in 7 days") are computed from today, so they
+  go stale until the sample files are refreshed.
+
+### QA (BUILD_PLAN §10)
+
+| Check                                                    | Result                                                                         |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| lint, build, prettier, client validation                 | pass, zero warnings                                                            |
+| Deploy green                                             | PR build job green; deploy runs on merge                                       |
+| All routes load directly; no asset 404s                  | pass (`scripts/smoke.mjs`, 16 routes + 6 assets, 375 px)                       |
+| No horizontal scroll at 375 / 768 / 1280 / 1920          | pass on 11 routes each                                                         |
+| Drawer opens/closes, traps focus, closes on route change | pass                                                                           |
+| Background toggle / reduced motion                       | toggle unchanged since Batch 1; shake and loader disabled under reduced motion |
+| MyoMedic palette scoped                                  | pass (`--accent` `#f0584b` there, `#ee4d40` on other pages and in the header)  |
+| Demo codes, bad code, case-insensitive                   | pass (also traversal input, network failure, malformed JSON)                   |
+| Check-in saves, survives reload, copy                    | pass (clipboard-denied fallback textarea shown)                                |
+| Charts on mobile                                         | pass at 375 px (screenshots reviewed)                                          |
+| Contact validates, consent required, mailto              | pass                                                                           |
+| Samples badged, placeholders tagged                      | `grep -rn "TODO(client)" src` → 97 lines                                       |
+| axe-core (wcag2a/aa, 21a/aa, best-practice)              | clean on all pages and all 7 portal tabs after fixes                           |
+
+**Lighthouse** (mobile emulation, local `vite preview`, Lighthouse 12.6; the local server has no CDN or
+compression so live numbers will differ):
+
+| Page                      | Perf | A11y | Best Practices | SEO |
+| ------------------------- | ---- | ---- | -------------- | --- |
+| Home                      | 95   | 96   | 100            | 100 |
+| Training                  | 96   | 100  | 100            | 100 |
+| Pricing                   | 98   | 100  | 100            | 100 |
+| Contact                   | 99   | 100  | 100            | 100 |
+| Portal (`?code=INA-DEMO`) | 93   | 100  | 100            | 100 |
+
+First round (before the non-blocking fonts fix) was Home 86, Training/Pricing/Contact 89, Portal 82; the
+Home accessibility was 96 until the decorative step numerals moved to CSS generated content and the logo link's redundant `aria-label` was dropped. Scores vary by a few points between runs (Home measured 92–95).
+
+### Blocked / needs Addy
+
+- Nothing blocked. After merging, check the three demo codes on the live URL (I can't reach it from the
+  sandbox's CI). Everything client-facing remains `TODO(client)`: address, hours, booking links,
+  Formspree, map, photos, final privacy wording (Alberta PIPA/HIA review), analytics.

@@ -81,7 +81,7 @@ function PortalInner() {
   if (loading && !error && request && request.n === 0) {
     // Automatic restore (deep link or remembered code): show the barbell bar, no form flash.
     return (
-      <section className="container-ina py-14">
+      <section className="container-ina min-h-[100svh] py-14">
         <h1 className="sr-only">Client Portal</h1>
         <PortalLoading />
       </section>

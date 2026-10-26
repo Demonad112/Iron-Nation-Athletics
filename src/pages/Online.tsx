@@ -106,9 +106,7 @@ export default function Online() {
                 {...reveal(i)}
                 className="relative border-t-4 border-[var(--accent)] bg-black/30 p-6"
               >
-                <span className="font-heading text-6xl text-[var(--text)] opacity-15">
-                  {s.step}
-                </span>
+                <span aria-hidden data-n={s.step} className="step-num" />
                 <h3 className="font-heading mt-1 text-3xl uppercase">{s.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted">{s.body}</p>
               </motion.li>
